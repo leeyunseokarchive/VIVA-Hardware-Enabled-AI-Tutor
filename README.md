@@ -6,7 +6,7 @@
 [![Raspberry Pi](https://img.shields.io/badge/Raspberry_Pi-Zero_WH-A22846?logo=raspberrypi&logoColor=white)](VivaHW/README.md)
 [![Gemini](https://img.shields.io/badge/AI-Gemini-4285F4?logo=googlegemini&logoColor=white)](VivaMVP/README.md)
 
-> 📌 이 저장소는 원래 비공개로 진행했던 2인 팀 프로젝트를 **포트폴리오 공개용으로 정리한
+> 이 저장소는 원래 비공개로 진행했던 2인 팀 프로젝트를 **포트폴리오 공개용으로 정리한
 > 스냅샷**입니다. 사업기획/재무 문서, 레거시 아카이브, API 키가 담긴 내부 작업 로그 등
 > 팀 내부용 자료는 제외했고, 하드웨어·소프트웨어 엔지니어링 문서와 소스 코드만 정리해
 > 담았습니다. 원 저장소의 커밋 이력(31 commits)은 모두 제 단독 작업입니다.
@@ -311,6 +311,6 @@ device 판 대비 빠지는 것: 로봇 연동 일체(`src/device/`가 번들에
 
 ---
 
-## 📄 라이선스
+## 라이선스
 
 MIT — see [LICENSE](LICENSE).
