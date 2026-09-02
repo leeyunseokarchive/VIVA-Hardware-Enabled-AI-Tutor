@@ -25,4 +25,4 @@ jobs:
       - name: Type check
         run: npx tsc --noEmit
       - name: Unit tests (jest)
-        run: npx jest --ci
+        run: npx jest --ci --forceExit
