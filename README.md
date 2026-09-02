@@ -20,12 +20,6 @@
 - 하드웨어(부품·출력·조립·결선·SD카드·전원): [VivaHW/README.md](VivaHW/README.md)
 - 하드웨어 펌웨어 설치 절차: [VivaMVP/viva-merged/pi-server/README.md](VivaMVP/viva-merged/pi-server/README.md)
 
-## 👥 팀 구성
-
-2인 팀 프로젝트입니다. 저는 **하드웨어 설계(3D 프린팅 로봇 헤드 · 회로 · Pi 펌웨어)와
-소프트웨어 전체(React Native 앱 + Raspberry Pi 서버)** 를 담당했고, 다른 팀원은 사업기획 ·
-제품기획 · 대외 커뮤니케이션을 담당했습니다.
-
 ---
 
 ## 1. 시스템 구성
