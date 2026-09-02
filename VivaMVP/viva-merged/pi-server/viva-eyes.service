@@ -1,0 +1,33 @@
+[Unit]
+Description=Viva Eye Renderer (WS :8787 + HDMI framebuffer)
+# 콘솔(getty)이 같은 프레임버퍼에 글자/커서를 그리지 못하게 밀어낸다.
+Conflicts=getty@tty1.service
+After=multi-user.target getty@tty1.service
+
+[Service]
+# 단일 코어라 촬영 인코딩(viva-server)이 눈 렌더링보다 우선해야 한다 - 커널 스케줄러가 알아서 양보시킨다.
+Nice=10
+# 렌더러는 잃을 상태가 없다 - 기본 90초 stop 대기가 restart/reboot 를 매번
+# 멎게 했던 실측(2026-08-04) 수정.
+TimeoutStopSec=3
+# /dev/fb0 직접 기록 (eyes.py 헤더 참조 - SDL kmsdrm 은 이 패널에서 깜빡임).
+# pygame 은 그리기 전용이라 SDL 비디오는 dummy 로 죽여둔다.
+Environment=SDL_VIDEODRIVER=dummy
+Environment=SDL_AUDIODRIVER=dummy
+Environment=PYTHONUNBUFFERED=1
+# 부팅 스플래시(viva-splash.service)를 내리고 fb0 를 넘겨받는다. Conflicts=
+# 는 부팅 트랜잭션에서 두 start 잡이 충돌해 이쪽 잡이 소거될 수 있어(실기기
+# 2026-08-18 눈이 영영 안 뜸) 명시적 stop 으로 대체. 스플래시 미설치/이미
+# 죽음이면 no-op.
+ExecStartPre=+/bin/systemctl stop viva-splash.service
+# 콘솔 커서 숨김 + 화면 클리어 (fbcon 커서 블링크가 프레임 위에 남지 않게).
+# '+' = root 로 실행 - User=viva 는 /dev/tty1 에 못 쓴다(실기기 Permission denied).
+ExecStartPre=+/bin/sh -c 'printf "\033[?25l\033[2J" > /dev/tty1 || true'
+ExecStart=/usr/bin/python3 /home/viva/pi-server/eyes.py
+Restart=always
+User=viva
+# /dev/fb0 쓰기에 video 그룹 필요
+SupplementaryGroups=video
+
+[Install]
+WantedBy=multi-user.target

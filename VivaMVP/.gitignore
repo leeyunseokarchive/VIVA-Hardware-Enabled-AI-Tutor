@@ -1,0 +1,18 @@
+viva-dev-client.apk
+
+# 워크트리. `.worktrees/` 는 수동 생성분, `.claude/worktrees/` 는 에이전트
+# 하네스가 만드는 자리다 - 둘 다 리포 안에 생기므로 무시하지 않으면
+# `git add -A` 한 번에 통째로 커밋된다.
+.worktrees/
+.claude/worktrees/
+
+# 비밀키. 하위 디렉토리 전부에 적용된다 (viva-merged/.gitignore 에도 따로
+# 있지만, tts-tester/.env 가 그 밖에 있어서 2026-08-07 까지 키 2개가 추적된
+# 채로 남아 있었다 - 커밋 4d68861).
+.env
+.env.*
+!.env.example
+
+# OS·툴 산출물
+.DS_Store
+.expo/

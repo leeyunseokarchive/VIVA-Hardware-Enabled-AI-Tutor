@@ -1,0 +1,11 @@
+[Unit]
+Description=Viva silence stream (keep I2S clock alive, prevents amp pop)
+After=sound.target
+
+[Service]
+ExecStart=/usr/bin/aplay -D dmixout -t raw -f S16_LE -r 48000 -c 2 /dev/zero
+Restart=always
+User=viva
+
+[Install]
+WantedBy=multi-user.target

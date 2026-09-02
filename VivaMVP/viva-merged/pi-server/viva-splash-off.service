@@ -1,0 +1,46 @@
+[Unit]
+Description=Viva 종료 화면 (희미한 ARTFLY 워드마크를 정상 종료 시 /dev/fb0 에 기록)
+#
+# 순서 설계 메모 (직접 검증한 systemd 동작, 헷갈리기 쉬워서 남겨둔다):
+#
+# DefaultDependencies 는 켜둔다(기본값, 여기서 no 로 끄면 안 된다!). 일반
+# 서비스는 기본으로 Conflicts=shutdown.target + Before=shutdown.target 을
+# 자동으로 받는다(man systemd.service "Default Dependencies") - 시스템이
+# shutdown.target 으로 전환될 때 이 자동 Conflicts 때문에 "정지"되면서
+# ExecStop= 이 실행된다. 이게 이 유닛이 종료 시점에 뭔가를 하게 만드는
+# 유일한 스위치라, DefaultDependencies=no 로 끄면(부팅 초반 유닛에 흔히
+# 쓰는 패턴) 오히려 ExecStop 이 종료 때 전혀 안 불린다 - 아래 hard-coded
+# 로 명시해서 이 사실을 몰라도 안전하게 남긴다.
+#
+# 그리고 "정지 순서는 시작 순서의 역순"(man systemd.unit, Before=/After=)
+# 이라 viva-eyes.service *보다 먼저* 시작하게 걸면(Before=) 종료 때는
+# eyes *보다 나중에* 멈춘다 - 원하는 게 정확히 이거다: off.raw 기록은
+# eyes 가 fb0 을 놓은 뒤에 일어나야 경합이 없다. (반대로 After=eyes 를
+# 쓰면 정지가 eyes보다 먼저 일어나 순서가 뒤집힌다 - 실수하기 쉬운 지점.)
+#
+# 대안으로 /usr/lib/systemd/system-shutdown/ 스크립트(종료 맨 마지막에
+# systemd-shutdown 바이너리가 직접 실행)도 검토했는데, 그 시점엔 이미
+# 루트 fs 가 read-only 재마운트/언마운트 진행 중이라 splash/off.raw 를
+# 못 읽을 위험이 있고 별도 실행 파일(755, initramfs 밖)도 필요해 더
+# 복잡하다 - 이 유닛이 훨씬 이르게(일반 서비스 정지 단계) 실행되므로
+# 더 단순하고 안전하다.
+DefaultDependencies=yes
+After=local-fs.target
+# poweroff/reboot/halt 는 전부 shutdown.target 을 거치므로(DefaultDependencies=yes
+# 가 이미 자동으로 Conflicts+Before=shutdown.target 을 걸어준다) reboot.target/
+# halt.target 을 따로 나열할 필요가 없다.
+Before=viva-eyes.service shutdown.target
+Conflicts=shutdown.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+# 부팅 때는 아무것도 안 한다 - 이 유닛의 존재 이유는 ExecStop 뿐이다.
+ExecStart=/bin/true
+ExecStop=/bin/sh -c 'cat /home/viva/pi-server/splash/off.raw > /dev/fb0 || true'
+User=viva
+# /dev/fb0 쓰기에 video 그룹 필요 (viva-eyes.service 와 동일).
+SupplementaryGroups=video
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,17 @@
+[Unit]
+Description=VIVA WiFi provisioning (QR scan)
+After=NetworkManager.service
+
+[Service]
+# journalctl -u viva-provision 로 print 가 바로 보이게 (viva-eyes/viva-wake 와 동일)
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/usr/bin/python3 /home/viva/pi-server/provision.py
+Restart=always
+RestartSec=3
+User=viva
+# nmcli 로 연결 등록/재시도 - NetworkManager 쪽 polkit 허용 필요(README 참고).
+# /dev/input 터치 이벤트 읽기용.
+SupplementaryGroups=input
+
+[Install]
+WantedBy=multi-user.target

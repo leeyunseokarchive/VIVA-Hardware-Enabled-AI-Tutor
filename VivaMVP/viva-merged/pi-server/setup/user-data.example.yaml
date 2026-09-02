@@ -1,0 +1,37 @@
+# Raspberry Pi Imager cloud-init 템플릿.
+# Imager 의 "고급 설정" 대신 직접 넣고 싶을 때 SD카드 boot 파티션에
+# user-data 라는 이름으로 저장한다.
+#
+# passwd 해시 생성: openssl passwd -6 '원하는비밀번호'
+# 실제 비밀번호나 그 해시를 이 저장소에 커밋하지 말 것.
+#cloud-config
+manage_resolv_conf: false
+
+hostname: viva
+manage_etc_hosts: true
+
+packages:
+  - avahi-daemon
+
+apt:
+  preserve_sources_list: true
+  conf: |
+    Acquire {
+      Check-Date "false";
+    };
+
+timezone: Asia/Seoul
+keyboard:
+  model: pc105
+  layout: "kr"
+
+user:
+  name: viva
+  shell: /bin/bash
+  lock_passwd: false
+  passwd: "<openssl passwd -6 로 생성한 해시로 교체>"
+  sudo: ALL=(ALL) NOPASSWD:ALL
+
+ssh_pwauth: true
+runcmd:
+  - [ systemctl, enable, --now, ssh ]

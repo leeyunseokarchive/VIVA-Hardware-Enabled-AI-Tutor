@@ -1,0 +1,13 @@
+node_modules/
+.expo/
+dist/
+web-build/
+*.log
+.env
+/android
+/ios
+.DS_Store
+
+# 부팅/종료 스플래시 raw 프레임 - 설치 시 splash.py --bake 로 굽는 산출물
+# (13개 × ~460KB, 커밋 대상 아님)
+pi-server/splash/

@@ -1,0 +1,1795 @@
+diff --git a/node_modules/react-native-vision-camera/README.md b/node_modules/react-native-vision-camera/README.md
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/VisionCamera.podspec b/node_modules/react-native-vision-camera/VisionCamera.podspec
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/CMakeLists.txt b/node_modules/react-native-vision-camera/android/CMakeLists.txt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/README.md b/node_modules/react-native-vision-camera/android/README.md
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/build.gradle b/node_modules/react-native-vision-camera/android/build.gradle
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/gradle.properties b/node_modules/react-native-vision-camera/android/gradle.properties
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/hasNamespace/AndroidManifest.xml b/node_modules/react-native-vision-camera/android/src/hasNamespace/AndroidManifest.xml
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/AndroidManifest.xml b/node_modules/react-native-vision-camera/android/src/main/AndroidManifest.xml
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/cpp/MutableJByteBuffer.cpp b/node_modules/react-native-vision-camera/android/src/main/cpp/MutableJByteBuffer.cpp
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/cpp/MutableJByteBuffer.h b/node_modules/react-native-vision-camera/android/src/main/cpp/MutableJByteBuffer.h
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/cpp/MutableRawBuffer.h b/node_modules/react-native-vision-camera/android/src/main/cpp/MutableRawBuffer.h
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/cpp/VisionCamera.cpp b/node_modules/react-native-vision-camera/android/src/main/cpp/VisionCamera.cpp
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/cpp/frameprocessors/FrameHostObject.cpp b/node_modules/react-native-vision-camera/android/src/main/cpp/frameprocessors/FrameHostObject.cpp
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/cpp/frameprocessors/FrameHostObject.h b/node_modules/react-native-vision-camera/android/src/main/cpp/frameprocessors/FrameHostObject.h
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/cpp/frameprocessors/FrameProcessorPluginHostObject.cpp b/node_modules/react-native-vision-camera/android/src/main/cpp/frameprocessors/FrameProcessorPluginHostObject.cpp
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/cpp/frameprocessors/FrameProcessorPluginHostObject.h b/node_modules/react-native-vision-camera/android/src/main/cpp/frameprocessors/FrameProcessorPluginHostObject.h
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/cpp/frameprocessors/JSIJNIConversion.cpp b/node_modules/react-native-vision-camera/android/src/main/cpp/frameprocessors/JSIJNIConversion.cpp
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/cpp/frameprocessors/JSIJNIConversion.h b/node_modules/react-native-vision-camera/android/src/main/cpp/frameprocessors/JSIJNIConversion.h
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/cpp/frameprocessors/VisionCameraProxy.cpp b/node_modules/react-native-vision-camera/android/src/main/cpp/frameprocessors/VisionCameraProxy.cpp
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/cpp/frameprocessors/VisionCameraProxy.h b/node_modules/react-native-vision-camera/android/src/main/cpp/frameprocessors/VisionCameraProxy.h
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/cpp/frameprocessors/java-bindings/JFrame.cpp b/node_modules/react-native-vision-camera/android/src/main/cpp/frameprocessors/java-bindings/JFrame.cpp
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/cpp/frameprocessors/java-bindings/JFrame.h b/node_modules/react-native-vision-camera/android/src/main/cpp/frameprocessors/java-bindings/JFrame.h
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/cpp/frameprocessors/java-bindings/JFrameProcessor.cpp b/node_modules/react-native-vision-camera/android/src/main/cpp/frameprocessors/java-bindings/JFrameProcessor.cpp
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/cpp/frameprocessors/java-bindings/JFrameProcessor.h b/node_modules/react-native-vision-camera/android/src/main/cpp/frameprocessors/java-bindings/JFrameProcessor.h
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/cpp/frameprocessors/java-bindings/JFrameProcessorPlugin.cpp b/node_modules/react-native-vision-camera/android/src/main/cpp/frameprocessors/java-bindings/JFrameProcessorPlugin.cpp
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/cpp/frameprocessors/java-bindings/JFrameProcessorPlugin.h b/node_modules/react-native-vision-camera/android/src/main/cpp/frameprocessors/java-bindings/JFrameProcessorPlugin.h
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/cpp/frameprocessors/java-bindings/JJSUnionValue.h b/node_modules/react-native-vision-camera/android/src/main/cpp/frameprocessors/java-bindings/JJSUnionValue.h
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/cpp/frameprocessors/java-bindings/JOrientation.h b/node_modules/react-native-vision-camera/android/src/main/cpp/frameprocessors/java-bindings/JOrientation.h
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/cpp/frameprocessors/java-bindings/JPixelFormat.h b/node_modules/react-native-vision-camera/android/src/main/cpp/frameprocessors/java-bindings/JPixelFormat.h
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/cpp/frameprocessors/java-bindings/JSharedArray.cpp b/node_modules/react-native-vision-camera/android/src/main/cpp/frameprocessors/java-bindings/JSharedArray.cpp
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/cpp/frameprocessors/java-bindings/JSharedArray.h b/node_modules/react-native-vision-camera/android/src/main/cpp/frameprocessors/java-bindings/JSharedArray.h
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/cpp/frameprocessors/java-bindings/JVisionCameraProxy.cpp b/node_modules/react-native-vision-camera/android/src/main/cpp/frameprocessors/java-bindings/JVisionCameraProxy.cpp
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/cpp/frameprocessors/java-bindings/JVisionCameraProxy.h b/node_modules/react-native-vision-camera/android/src/main/cpp/frameprocessors/java-bindings/JVisionCameraProxy.h
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/cpp/frameprocessors/java-bindings/JVisionCameraScheduler.cpp b/node_modules/react-native-vision-camera/android/src/main/cpp/frameprocessors/java-bindings/JVisionCameraScheduler.cpp
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/cpp/frameprocessors/java-bindings/JVisionCameraScheduler.h b/node_modules/react-native-vision-camera/android/src/main/cpp/frameprocessors/java-bindings/JVisionCameraScheduler.h
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/CameraConfiguration.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/CameraConfiguration.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/CameraDeviceDetails.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/CameraDeviceDetails.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/CameraError.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/CameraError.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/CameraQueues.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/CameraQueues.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/CameraSession+Configuration.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/CameraSession+Configuration.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/CameraSession+Focus.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/CameraSession+Focus.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/CameraSession+Photo.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/CameraSession+Photo.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/CameraSession+Video.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/CameraSession+Video.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/CameraSession.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/CameraSession.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/CodeScannerFrame.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/CodeScannerFrame.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/CodeScannerPipeline.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/CodeScannerPipeline.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/FrameProcessorPipeline.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/FrameProcessorPipeline.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/MetadataProvider.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/MetadataProvider.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/OrientationManager.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/OrientationManager.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/Photo.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/Photo.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/extensions/CameraInfo+id.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/extensions/CameraInfo+id.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/extensions/CameraSelector+byId.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/extensions/CameraSelector+byId.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/extensions/CameraSelector+withExtension.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/extensions/CameraSelector+withExtension.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/extensions/DynamicRange+isSDR.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/extensions/DynamicRange+isSDR.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/extensions/ImageAnalysis.Builder+setTargetFrameRate.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/extensions/ImageAnalysis.Builder+setTargetFrameRate.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/extensions/ImageCapture+takePicture.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/extensions/ImageCapture+takePicture.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/extensions/ListenableFuture+await.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/extensions/ListenableFuture+await.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/extensions/ResolutionSelector+forSize.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/extensions/ResolutionSelector+forSize.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/extensions/Size+aspectRatio.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/extensions/Size+aspectRatio.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/extensions/StateError+toCameraError.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/extensions/StateError+toCameraError.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/extensions/VideoRecordEvent+toCameraError.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/extensions/VideoRecordEvent+toCameraError.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/types/.gitattributes b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/types/.gitattributes
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/types/AutoFocusSystem.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/types/AutoFocusSystem.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/types/CameraDeviceFormat.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/types/CameraDeviceFormat.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/types/CodeScannerOptions.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/types/CodeScannerOptions.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/types/CodeType.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/types/CodeType.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/types/DeviceType.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/types/DeviceType.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/types/Flash.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/types/Flash.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/types/HardwareLevel.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/types/HardwareLevel.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/types/JSUnionValue.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/types/JSUnionValue.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/types/Orientation.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/types/Orientation.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/types/OutputOrientation.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/types/OutputOrientation.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/types/PermissionStatus.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/types/PermissionStatus.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/types/PixelFormat.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/types/PixelFormat.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/types/Position.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/types/Position.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/types/PreviewViewType.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/types/PreviewViewType.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/types/QualityBalance.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/types/QualityBalance.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/types/RecordVideoOptions.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/types/RecordVideoOptions.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/types/ResizeMode.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/types/ResizeMode.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/types/ShutterType.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/types/ShutterType.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/types/TakePhotoOptions.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/types/TakePhotoOptions.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/types/TakeSnapshotOptions.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/types/TakeSnapshotOptions.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/types/Torch.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/types/Torch.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/types/Video.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/types/Video.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/types/VideoCodec.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/types/VideoCodec.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/types/VideoFileType.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/types/VideoFileType.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/types/VideoStabilizationMode.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/types/VideoStabilizationMode.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/utils/CamcorderProfileUtils.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/utils/CamcorderProfileUtils.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/utils/FileUtils.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/utils/FileUtils.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/utils/ImageFormatUtils.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/utils/ImageFormatUtils.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/utils/OutputFile.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/utils/OutputFile.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/utils/runOnUiThread.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/core/utils/runOnUiThread.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/frameprocessors/Frame.java b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/frameprocessors/Frame.java
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/frameprocessors/FrameProcessor.java b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/frameprocessors/FrameProcessor.java
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/frameprocessors/FrameProcessorPlugin.java b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/frameprocessors/FrameProcessorPlugin.java
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/frameprocessors/FrameProcessorPluginRegistry.java b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/frameprocessors/FrameProcessorPluginRegistry.java
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/frameprocessors/SharedArray.java b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/frameprocessors/SharedArray.java
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/frameprocessors/VisionCameraInstaller.java b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/frameprocessors/VisionCameraInstaller.java
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/frameprocessors/VisionCameraProxy.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/frameprocessors/VisionCameraProxy.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/frameprocessors/VisionCameraScheduler.java b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/frameprocessors/VisionCameraScheduler.java
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/react/CameraDevicesManager.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/react/CameraDevicesManager.kt
+old mode 100644
+new mode 100755
+index 0386478..ce62140
+--- a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/react/CameraDevicesManager.kt
++++ b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/react/CameraDevicesManager.kt
+@@ -68,6 +68,18 @@ class CameraDevicesManager(private val reactContext: ReactApplicationContext) :
+         Log.i(TAG, "Initializing ExtensionsManager...")
+         extensionsManager = ExtensionsManager.getInstanceAsync(reactContext, cameraProvider!!).await(executor)
+         Log.i(TAG, "Successfully initialized!")
++        // getConstants()/initialize() (which fire the FIRST "CameraDevicesChanged"
++        // event) run on RN bridge startup and can easily win the race against this
++        // coroutine, especially on a cold app start - resulting in an empty device
++        // list that nothing ever corrects afterwards (AvailabilityCallback only
++        // fires on real hardware plug/unplug, not on "we just finished init").
++        // That produces exactly the "camera not found on 1st/2nd launch, only
++        // works after force-closing and reopening" symptom, since a fresh process
++        // is the only thing that re-runs getConstants(). Fix: once this async
++        // init actually completes, re-emit the changed event ourselves so any
++        // JS-side listener (useCameraDevices/useCameraDevice) picks up the real
++        // device list within the SAME app session - no restart needed.
++        sendAvailableDevicesChangedEvent()
+       } catch (error: Throwable) {
+         Log.e(TAG, "Failed to initialize ProcessCameraProvider/ExtensionsManager! Error: ${error.message}", error)
+       }
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/react/CameraPackage.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/react/CameraPackage.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/react/CameraView+Events.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/react/CameraView+Events.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/react/CameraView+Focus.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/react/CameraView+Focus.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/react/CameraView+RecordVideo.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/react/CameraView+RecordVideo.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/react/CameraView+TakePhoto.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/react/CameraView+TakePhoto.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/react/CameraView+TakeSnapshot.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/react/CameraView+TakeSnapshot.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/react/CameraView.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/react/CameraView.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/react/CameraViewManager.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/react/CameraViewManager.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/react/CameraViewModule.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/react/CameraViewModule.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/react/Events.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/react/Events.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/react/FpsSampleCollector.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/react/FpsSampleCollector.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/react/extensions/List+toJSValue.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/react/extensions/List+toJSValue.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/react/extensions/ViewGroup+installHierarchyFitter.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/react/extensions/ViewGroup+installHierarchyFitter.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/react/utils/CallbackPromise.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/react/utils/CallbackPromise.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/react/utils/withPromise.kt b/node_modules/react-native-vision-camera/android/src/main/java/com/mrousavy/camera/react/utils/withPromise.kt
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/app.plugin.js b/node_modules/react-native-vision-camera/app.plugin.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/CameraConfiguration.swift b/node_modules/react-native-vision-camera/ios/Core/CameraConfiguration.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/CameraError.swift b/node_modules/react-native-vision-camera/ios/Core/CameraError.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/CameraQueues.swift b/node_modules/react-native-vision-camera/ios/Core/CameraQueues.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/CameraSession+Audio.swift b/node_modules/react-native-vision-camera/ios/Core/CameraSession+Audio.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/CameraSession+CodeScanner.swift b/node_modules/react-native-vision-camera/ios/Core/CameraSession+CodeScanner.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/CameraSession+Configuration.swift b/node_modules/react-native-vision-camera/ios/Core/CameraSession+Configuration.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/CameraSession+Focus.swift b/node_modules/react-native-vision-camera/ios/Core/CameraSession+Focus.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/CameraSession+Location.swift b/node_modules/react-native-vision-camera/ios/Core/CameraSession+Location.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/CameraSession+Orientation.swift b/node_modules/react-native-vision-camera/ios/Core/CameraSession+Orientation.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/CameraSession+Photo.swift b/node_modules/react-native-vision-camera/ios/Core/CameraSession+Photo.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/CameraSession+Video.swift b/node_modules/react-native-vision-camera/ios/Core/CameraSession+Video.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/CameraSession.swift b/node_modules/react-native-vision-camera/ios/Core/CameraSession.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/CameraSessionDelegate.swift b/node_modules/react-native-vision-camera/ios/Core/CameraSessionDelegate.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Extensions/AVAssetWriterInputPixelBufferAdaptor+initWithVideoSettings.swift b/node_modules/react-native-vision-camera/ios/Core/Extensions/AVAssetWriterInputPixelBufferAdaptor+initWithVideoSettings.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Extensions/AVAudioSession+updateCategory.swift b/node_modules/react-native-vision-camera/ios/Core/Extensions/AVAudioSession+updateCategory.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Extensions/AVCaptureConnection+orientation.swift b/node_modules/react-native-vision-camera/ios/Core/Extensions/AVCaptureConnection+orientation.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Extensions/AVCaptureDevice+isMultiCam.swift b/node_modules/react-native-vision-camera/ios/Core/Extensions/AVCaptureDevice+isMultiCam.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Extensions/AVCaptureDevice+minFocusDistance.swift b/node_modules/react-native-vision-camera/ios/Core/Extensions/AVCaptureDevice+minFocusDistance.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Extensions/AVCaptureDevice+neutralZoom.swift b/node_modules/react-native-vision-camera/ios/Core/Extensions/AVCaptureDevice+neutralZoom.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Extensions/AVCaptureDevice+physicalDevices.swift b/node_modules/react-native-vision-camera/ios/Core/Extensions/AVCaptureDevice+physicalDevices.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Extensions/AVCaptureDevice+sensorOrientation.swift b/node_modules/react-native-vision-camera/ios/Core/Extensions/AVCaptureDevice+sensorOrientation.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Extensions/AVCaptureDevice+toDictionary.swift b/node_modules/react-native-vision-camera/ios/Core/Extensions/AVCaptureDevice+toDictionary.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Extensions/AVCaptureDevice.Format+dimensions.swift b/node_modules/react-native-vision-camera/ios/Core/Extensions/AVCaptureDevice.Format+dimensions.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Extensions/AVCaptureDevice.Format+toDictionary.swift b/node_modules/react-native-vision-camera/ios/Core/Extensions/AVCaptureDevice.Format+toDictionary.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Extensions/AVCaptureOutput+isMirrored.swift b/node_modules/react-native-vision-camera/ios/Core/Extensions/AVCaptureOutput+isMirrored.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Extensions/AVCaptureOutput+orientation.swift b/node_modules/react-native-vision-camera/ios/Core/Extensions/AVCaptureOutput+orientation.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Extensions/AVCaptureOutput+supportsVirtualRotation.swift b/node_modules/react-native-vision-camera/ios/Core/Extensions/AVCaptureOutput+supportsVirtualRotation.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Extensions/AVCaptureSession+synchronizeBuffer.swift b/node_modules/react-native-vision-camera/ios/Core/Extensions/AVCaptureSession+synchronizeBuffer.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Extensions/AVCaptureVideoDataOutput+findPixelFormat.swift b/node_modules/react-native-vision-camera/ios/Core/Extensions/AVCaptureVideoDataOutput+findPixelFormat.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Extensions/AVCaptureVideoDataOutput+pixelFormat.swift b/node_modules/react-native-vision-camera/ios/Core/Extensions/AVCaptureVideoDataOutput+pixelFormat.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Extensions/AVCaptureVideoDataOutput+recommendedVideoSettings.swift b/node_modules/react-native-vision-camera/ios/Core/Extensions/AVCaptureVideoDataOutput+recommendedVideoSettings.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Extensions/AVFrameRateRange+includes.swift b/node_modules/react-native-vision-camera/ios/Core/Extensions/AVFrameRateRange+includes.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Extensions/CLLocation+iso6709String.swift b/node_modules/react-native-vision-camera/ios/Core/Extensions/CLLocation+iso6709String.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Extensions/CLLocation+toEXIF.swift b/node_modules/react-native-vision-camera/ios/Core/Extensions/CLLocation+toEXIF.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Extensions/CLLocationManager+requestAccess.swift b/node_modules/react-native-vision-camera/ios/Core/Extensions/CLLocationManager+requestAccess.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Extensions/CMAccelerometerData+deviceOrientation.swift b/node_modules/react-native-vision-camera/ios/Core/Extensions/CMAccelerometerData+deviceOrientation.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Extensions/CMSampleBuffer+copyWithTimestampOffset.swift b/node_modules/react-native-vision-camera/ios/Core/Extensions/CMSampleBuffer+copyWithTimestampOffset.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Extensions/CMTime+inverted.swift b/node_modules/react-native-vision-camera/ios/Core/Extensions/CMTime+inverted.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Extensions/CMVideoDimensions+toCGSize.swift b/node_modules/react-native-vision-camera/ios/Core/Extensions/CMVideoDimensions+toCGSize.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Extensions/Collection+safe.swift b/node_modules/react-native-vision-camera/ios/Core/Extensions/Collection+safe.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Extensions/FourCharCode+toString.swift b/node_modules/react-native-vision-camera/ios/Core/Extensions/FourCharCode+toString.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Extensions/UIApplication+interfaceOrientation.swift b/node_modules/react-native-vision-camera/ios/Core/Extensions/UIApplication+interfaceOrientation.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/LocationProvider.swift b/node_modules/react-native-vision-camera/ios/Core/LocationProvider.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/MetadataProvider.swift b/node_modules/react-native-vision-camera/ios/Core/MetadataProvider.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/OrientationManager.swift b/node_modules/react-native-vision-camera/ios/Core/OrientationManager.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Parsers/AVAssetWriter.Status+descriptor.swift b/node_modules/react-native-vision-camera/ios/Core/Parsers/AVAssetWriter.Status+descriptor.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Parsers/AVAuthorizationStatus+descriptor.swift b/node_modules/react-native-vision-camera/ios/Core/Parsers/AVAuthorizationStatus+descriptor.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Parsers/AVCaptureDevice.DeviceType+physicalDeviceDescriptor.swift b/node_modules/react-native-vision-camera/ios/Core/Parsers/AVCaptureDevice.DeviceType+physicalDeviceDescriptor.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Parsers/AVCaptureDevice.FlashMode+descriptor.swift b/node_modules/react-native-vision-camera/ios/Core/Parsers/AVCaptureDevice.FlashMode+descriptor.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Parsers/AVCaptureDevice.Format.AutoFocusSystem+descriptor.swift b/node_modules/react-native-vision-camera/ios/Core/Parsers/AVCaptureDevice.Format.AutoFocusSystem+descriptor.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Parsers/AVCaptureDevice.Position+descriptor.swift b/node_modules/react-native-vision-camera/ios/Core/Parsers/AVCaptureDevice.Position+descriptor.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Parsers/AVCaptureDevice.TorchMode+descriptor.swift b/node_modules/react-native-vision-camera/ios/Core/Parsers/AVCaptureDevice.TorchMode+descriptor.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Parsers/AVCapturePhotoOutput.QualityPrioritization+descriptor.swift b/node_modules/react-native-vision-camera/ios/Core/Parsers/AVCapturePhotoOutput.QualityPrioritization+descriptor.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Parsers/AVFileType+descriptor.swift b/node_modules/react-native-vision-camera/ios/Core/Parsers/AVFileType+descriptor.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Parsers/AVMetadataObject.ObjectType+descriptor.swift b/node_modules/react-native-vision-camera/ios/Core/Parsers/AVMetadataObject.ObjectType+descriptor.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Parsers/AVVideoCodecType+descriptor.swift b/node_modules/react-native-vision-camera/ios/Core/Parsers/AVVideoCodecType+descriptor.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Parsers/CLAuthorizationStatus+descriptor.swift b/node_modules/react-native-vision-camera/ios/Core/Parsers/CLAuthorizationStatus+descriptor.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Parsers/EnumParserError.swift b/node_modules/react-native-vision-camera/ios/Core/Parsers/EnumParserError.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/PhotoCaptureDelegate.swift b/node_modules/react-native-vision-camera/ios/Core/PhotoCaptureDelegate.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/PreviewView.swift b/node_modules/react-native-vision-camera/ios/Core/PreviewView.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Recording/TimelineEvent.swift b/node_modules/react-native-vision-camera/ios/Core/Recording/TimelineEvent.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Recording/Track.swift b/node_modules/react-native-vision-camera/ios/Core/Recording/Track.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Recording/TrackTimeline.swift b/node_modules/react-native-vision-camera/ios/Core/Recording/TrackTimeline.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/RecordingSession.swift b/node_modules/react-native-vision-camera/ios/Core/RecordingSession.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Types/AutoFocusSystem.swift b/node_modules/react-native-vision-camera/ios/Core/Types/AutoFocusSystem.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Types/CameraDeviceFormat.swift b/node_modules/react-native-vision-camera/ios/Core/Types/CameraDeviceFormat.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Types/CodeScannerOptions.swift b/node_modules/react-native-vision-camera/ios/Core/Types/CodeScannerOptions.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Types/Flash.swift b/node_modules/react-native-vision-camera/ios/Core/Types/Flash.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Types/HardwareLevel.swift b/node_modules/react-native-vision-camera/ios/Core/Types/HardwareLevel.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Types/JSUnionValue.swift b/node_modules/react-native-vision-camera/ios/Core/Types/JSUnionValue.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Types/Orientation.swift b/node_modules/react-native-vision-camera/ios/Core/Types/Orientation.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Types/OutputOrientation.swift b/node_modules/react-native-vision-camera/ios/Core/Types/OutputOrientation.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Types/PixelFormat.swift b/node_modules/react-native-vision-camera/ios/Core/Types/PixelFormat.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Types/QualityBalance.swift b/node_modules/react-native-vision-camera/ios/Core/Types/QualityBalance.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Types/RecordVideoOptions.swift b/node_modules/react-native-vision-camera/ios/Core/Types/RecordVideoOptions.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Types/ResizeMode.swift b/node_modules/react-native-vision-camera/ios/Core/Types/ResizeMode.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Types/ShutterType.swift b/node_modules/react-native-vision-camera/ios/Core/Types/ShutterType.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Types/TakePhotoOptions.swift b/node_modules/react-native-vision-camera/ios/Core/Types/TakePhotoOptions.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Types/TakeSnapshotOptions.swift b/node_modules/react-native-vision-camera/ios/Core/Types/TakeSnapshotOptions.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Types/Torch.swift b/node_modules/react-native-vision-camera/ios/Core/Types/Torch.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Types/Video.swift b/node_modules/react-native-vision-camera/ios/Core/Types/Video.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Types/VideoStabilizationMode.swift b/node_modules/react-native-vision-camera/ios/Core/Types/VideoStabilizationMode.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Utils/FileUtils.swift b/node_modules/react-native-vision-camera/ios/Core/Utils/FileUtils.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Utils/GlobalReferenceHolder.swift b/node_modules/react-native-vision-camera/ios/Core/Utils/GlobalReferenceHolder.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/Core/Utils/VisionLogger.swift b/node_modules/react-native-vision-camera/ios/Core/Utils/VisionLogger.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/FrameProcessors/Frame.h b/node_modules/react-native-vision-camera/ios/FrameProcessors/Frame.h
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/FrameProcessors/Frame.m b/node_modules/react-native-vision-camera/ios/FrameProcessors/Frame.m
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/FrameProcessors/FrameHostObject.h b/node_modules/react-native-vision-camera/ios/FrameProcessors/FrameHostObject.h
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/FrameProcessors/FrameHostObject.mm b/node_modules/react-native-vision-camera/ios/FrameProcessors/FrameHostObject.mm
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/FrameProcessors/FrameProcessor.h b/node_modules/react-native-vision-camera/ios/FrameProcessors/FrameProcessor.h
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/FrameProcessors/FrameProcessor.mm b/node_modules/react-native-vision-camera/ios/FrameProcessors/FrameProcessor.mm
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/FrameProcessors/FrameProcessorPlugin.h b/node_modules/react-native-vision-camera/ios/FrameProcessors/FrameProcessorPlugin.h
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/FrameProcessors/FrameProcessorPlugin.m b/node_modules/react-native-vision-camera/ios/FrameProcessors/FrameProcessorPlugin.m
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/FrameProcessors/FrameProcessorPluginHostObject.h b/node_modules/react-native-vision-camera/ios/FrameProcessors/FrameProcessorPluginHostObject.h
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/FrameProcessors/FrameProcessorPluginHostObject.mm b/node_modules/react-native-vision-camera/ios/FrameProcessors/FrameProcessorPluginHostObject.mm
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/FrameProcessors/FrameProcessorPluginRegistry.h b/node_modules/react-native-vision-camera/ios/FrameProcessors/FrameProcessorPluginRegistry.h
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/FrameProcessors/FrameProcessorPluginRegistry.m b/node_modules/react-native-vision-camera/ios/FrameProcessors/FrameProcessorPluginRegistry.m
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/FrameProcessors/JSINSObjectConversion.h b/node_modules/react-native-vision-camera/ios/FrameProcessors/JSINSObjectConversion.h
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/FrameProcessors/JSINSObjectConversion.mm b/node_modules/react-native-vision-camera/ios/FrameProcessors/JSINSObjectConversion.mm
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/FrameProcessors/MutableRawBuffer.h b/node_modules/react-native-vision-camera/ios/FrameProcessors/MutableRawBuffer.h
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/FrameProcessors/SharedArray.h b/node_modules/react-native-vision-camera/ios/FrameProcessors/SharedArray.h
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/FrameProcessors/SharedArray.mm b/node_modules/react-native-vision-camera/ios/FrameProcessors/SharedArray.mm
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/FrameProcessors/UIImageOrientation+descriptor.h b/node_modules/react-native-vision-camera/ios/FrameProcessors/UIImageOrientation+descriptor.h
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/FrameProcessors/VisionCameraInstaller.h b/node_modules/react-native-vision-camera/ios/FrameProcessors/VisionCameraInstaller.h
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/FrameProcessors/VisionCameraInstaller.mm b/node_modules/react-native-vision-camera/ios/FrameProcessors/VisionCameraInstaller.mm
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/FrameProcessors/VisionCameraProxy.h b/node_modules/react-native-vision-camera/ios/FrameProcessors/VisionCameraProxy.h
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/FrameProcessors/VisionCameraProxy.mm b/node_modules/react-native-vision-camera/ios/FrameProcessors/VisionCameraProxy.mm
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/FrameProcessors/VisionCameraProxyDelegate.h b/node_modules/react-native-vision-camera/ios/FrameProcessors/VisionCameraProxyDelegate.h
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/FrameProcessors/VisionCameraProxyHolder.h b/node_modules/react-native-vision-camera/ios/FrameProcessors/VisionCameraProxyHolder.h
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/FrameProcessors/VisionCameraProxyHolder.mm b/node_modules/react-native-vision-camera/ios/FrameProcessors/VisionCameraProxyHolder.mm
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/README.md b/node_modules/react-native-vision-camera/ios/README.md
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/React/CameraBridge.h b/node_modules/react-native-vision-camera/ios/React/CameraBridge.h
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/React/CameraDevicesManager.m b/node_modules/react-native-vision-camera/ios/React/CameraDevicesManager.m
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/React/CameraDevicesManager.swift b/node_modules/react-native-vision-camera/ios/React/CameraDevicesManager.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/React/CameraView+Focus.swift b/node_modules/react-native-vision-camera/ios/React/CameraView+Focus.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/React/CameraView+RecordVideo.swift b/node_modules/react-native-vision-camera/ios/React/CameraView+RecordVideo.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/React/CameraView+TakePhoto.swift b/node_modules/react-native-vision-camera/ios/React/CameraView+TakePhoto.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/React/CameraView+TakeSnapshot.swift b/node_modules/react-native-vision-camera/ios/React/CameraView+TakeSnapshot.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/React/CameraView+Zoom.swift b/node_modules/react-native-vision-camera/ios/React/CameraView+Zoom.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/React/CameraView.swift b/node_modules/react-native-vision-camera/ios/React/CameraView.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/React/CameraViewManager+VisionCameraProxyDelegate.swift b/node_modules/react-native-vision-camera/ios/React/CameraViewManager+VisionCameraProxyDelegate.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/React/CameraViewManager.m b/node_modules/react-native-vision-camera/ios/React/CameraViewManager.m
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/React/CameraViewManager.swift b/node_modules/react-native-vision-camera/ios/React/CameraViewManager.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/React/FpsSampleCollector.swift b/node_modules/react-native-vision-camera/ios/React/FpsSampleCollector.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/React/FpsSampleCollectorDelegate.swift b/node_modules/react-native-vision-camera/ios/React/FpsSampleCollectorDelegate.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/React/Snapshot.swift b/node_modules/react-native-vision-camera/ios/React/Snapshot.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/React/Utils/Callback.swift b/node_modules/react-native-vision-camera/ios/React/Utils/Callback.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/React/Utils/MakeReactError.swift b/node_modules/react-native-vision-camera/ios/React/Utils/MakeReactError.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/ios/React/Utils/Promise.swift b/node_modules/react-native-vision-camera/ios/React/Utils/Promise.swift
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/Camera.js b/node_modules/react-native-vision-camera/lib/commonjs/Camera.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/Camera.js.map b/node_modules/react-native-vision-camera/lib/commonjs/Camera.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/CameraDevices.js b/node_modules/react-native-vision-camera/lib/commonjs/CameraDevices.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/CameraDevices.js.map b/node_modules/react-native-vision-camera/lib/commonjs/CameraDevices.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/CameraError.js b/node_modules/react-native-vision-camera/lib/commonjs/CameraError.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/CameraError.js.map b/node_modules/react-native-vision-camera/lib/commonjs/CameraError.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/FpsGraph.js b/node_modules/react-native-vision-camera/lib/commonjs/FpsGraph.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/FpsGraph.js.map b/node_modules/react-native-vision-camera/lib/commonjs/FpsGraph.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/JSIHelper.js b/node_modules/react-native-vision-camera/lib/commonjs/JSIHelper.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/JSIHelper.js.map b/node_modules/react-native-vision-camera/lib/commonjs/JSIHelper.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/NativeCameraModule.js b/node_modules/react-native-vision-camera/lib/commonjs/NativeCameraModule.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/NativeCameraModule.js.map b/node_modules/react-native-vision-camera/lib/commonjs/NativeCameraModule.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/NativeCameraView.js b/node_modules/react-native-vision-camera/lib/commonjs/NativeCameraView.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/NativeCameraView.js.map b/node_modules/react-native-vision-camera/lib/commonjs/NativeCameraView.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/RotationHelper.js b/node_modules/react-native-vision-camera/lib/commonjs/RotationHelper.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/RotationHelper.js.map b/node_modules/react-native-vision-camera/lib/commonjs/RotationHelper.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/dependencies/ModuleProxy.js b/node_modules/react-native-vision-camera/lib/commonjs/dependencies/ModuleProxy.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/dependencies/ModuleProxy.js.map b/node_modules/react-native-vision-camera/lib/commonjs/dependencies/ModuleProxy.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/dependencies/ReanimatedProxy.js b/node_modules/react-native-vision-camera/lib/commonjs/dependencies/ReanimatedProxy.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/dependencies/ReanimatedProxy.js.map b/node_modules/react-native-vision-camera/lib/commonjs/dependencies/ReanimatedProxy.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/dependencies/SkiaProxy.js b/node_modules/react-native-vision-camera/lib/commonjs/dependencies/SkiaProxy.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/dependencies/SkiaProxy.js.map b/node_modules/react-native-vision-camera/lib/commonjs/dependencies/SkiaProxy.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/dependencies/WorkletsProxy.js b/node_modules/react-native-vision-camera/lib/commonjs/dependencies/WorkletsProxy.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/dependencies/WorkletsProxy.js.map b/node_modules/react-native-vision-camera/lib/commonjs/dependencies/WorkletsProxy.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/devices/Templates.js b/node_modules/react-native-vision-camera/lib/commonjs/devices/Templates.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/devices/Templates.js.map b/node_modules/react-native-vision-camera/lib/commonjs/devices/Templates.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/devices/getCameraDevice.js b/node_modules/react-native-vision-camera/lib/commonjs/devices/getCameraDevice.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/devices/getCameraDevice.js.map b/node_modules/react-native-vision-camera/lib/commonjs/devices/getCameraDevice.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/devices/getCameraFormat.js b/node_modules/react-native-vision-camera/lib/commonjs/devices/getCameraFormat.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/devices/getCameraFormat.js.map b/node_modules/react-native-vision-camera/lib/commonjs/devices/getCameraFormat.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/expo-plugin/@types.js b/node_modules/react-native-vision-camera/lib/commonjs/expo-plugin/@types.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/expo-plugin/@types.js.map b/node_modules/react-native-vision-camera/lib/commonjs/expo-plugin/@types.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/expo-plugin/withAndroidMLKitVisionModel.js b/node_modules/react-native-vision-camera/lib/commonjs/expo-plugin/withAndroidMLKitVisionModel.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/expo-plugin/withAndroidMLKitVisionModel.js.map b/node_modules/react-native-vision-camera/lib/commonjs/expo-plugin/withAndroidMLKitVisionModel.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/expo-plugin/withEnableFrameProcessorsAndroid.js b/node_modules/react-native-vision-camera/lib/commonjs/expo-plugin/withEnableFrameProcessorsAndroid.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/expo-plugin/withEnableFrameProcessorsAndroid.js.map b/node_modules/react-native-vision-camera/lib/commonjs/expo-plugin/withEnableFrameProcessorsAndroid.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/expo-plugin/withEnableFrameProcessorsIOS.js b/node_modules/react-native-vision-camera/lib/commonjs/expo-plugin/withEnableFrameProcessorsIOS.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/expo-plugin/withEnableFrameProcessorsIOS.js.map b/node_modules/react-native-vision-camera/lib/commonjs/expo-plugin/withEnableFrameProcessorsIOS.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/expo-plugin/withEnableLocationIOS.js b/node_modules/react-native-vision-camera/lib/commonjs/expo-plugin/withEnableLocationIOS.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/expo-plugin/withEnableLocationIOS.js.map b/node_modules/react-native-vision-camera/lib/commonjs/expo-plugin/withEnableLocationIOS.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/expo-plugin/withVisionCamera.js b/node_modules/react-native-vision-camera/lib/commonjs/expo-plugin/withVisionCamera.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/expo-plugin/withVisionCamera.js.map b/node_modules/react-native-vision-camera/lib/commonjs/expo-plugin/withVisionCamera.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/expo-plugin/writeToPodfile.js b/node_modules/react-native-vision-camera/lib/commonjs/expo-plugin/writeToPodfile.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/expo-plugin/writeToPodfile.js.map b/node_modules/react-native-vision-camera/lib/commonjs/expo-plugin/writeToPodfile.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/frame-processors/FrameProcessorsUnavailableError.js b/node_modules/react-native-vision-camera/lib/commonjs/frame-processors/FrameProcessorsUnavailableError.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/frame-processors/FrameProcessorsUnavailableError.js.map b/node_modules/react-native-vision-camera/lib/commonjs/frame-processors/FrameProcessorsUnavailableError.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/frame-processors/VisionCameraProxy.js b/node_modules/react-native-vision-camera/lib/commonjs/frame-processors/VisionCameraProxy.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/frame-processors/VisionCameraProxy.js.map b/node_modules/react-native-vision-camera/lib/commonjs/frame-processors/VisionCameraProxy.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/frame-processors/runAsync.js b/node_modules/react-native-vision-camera/lib/commonjs/frame-processors/runAsync.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/frame-processors/runAsync.js.map b/node_modules/react-native-vision-camera/lib/commonjs/frame-processors/runAsync.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/frame-processors/runAtTargetFps.js b/node_modules/react-native-vision-camera/lib/commonjs/frame-processors/runAtTargetFps.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/frame-processors/runAtTargetFps.js.map b/node_modules/react-native-vision-camera/lib/commonjs/frame-processors/runAtTargetFps.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/frame-processors/throwErrorOnJS.js b/node_modules/react-native-vision-camera/lib/commonjs/frame-processors/throwErrorOnJS.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/frame-processors/throwErrorOnJS.js.map b/node_modules/react-native-vision-camera/lib/commonjs/frame-processors/throwErrorOnJS.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/frame-processors/withFrameRefCounting.js b/node_modules/react-native-vision-camera/lib/commonjs/frame-processors/withFrameRefCounting.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/frame-processors/withFrameRefCounting.js.map b/node_modules/react-native-vision-camera/lib/commonjs/frame-processors/withFrameRefCounting.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/hooks/useCameraDevice.js b/node_modules/react-native-vision-camera/lib/commonjs/hooks/useCameraDevice.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/hooks/useCameraDevice.js.map b/node_modules/react-native-vision-camera/lib/commonjs/hooks/useCameraDevice.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/hooks/useCameraDevices.js b/node_modules/react-native-vision-camera/lib/commonjs/hooks/useCameraDevices.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/hooks/useCameraDevices.js.map b/node_modules/react-native-vision-camera/lib/commonjs/hooks/useCameraDevices.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/hooks/useCameraFormat.js b/node_modules/react-native-vision-camera/lib/commonjs/hooks/useCameraFormat.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/hooks/useCameraFormat.js.map b/node_modules/react-native-vision-camera/lib/commonjs/hooks/useCameraFormat.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/hooks/useCameraPermission.js b/node_modules/react-native-vision-camera/lib/commonjs/hooks/useCameraPermission.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/hooks/useCameraPermission.js.map b/node_modules/react-native-vision-camera/lib/commonjs/hooks/useCameraPermission.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/hooks/useCodeScanner.js b/node_modules/react-native-vision-camera/lib/commonjs/hooks/useCodeScanner.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/hooks/useCodeScanner.js.map b/node_modules/react-native-vision-camera/lib/commonjs/hooks/useCodeScanner.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/hooks/useFrameProcessor.js b/node_modules/react-native-vision-camera/lib/commonjs/hooks/useFrameProcessor.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/hooks/useFrameProcessor.js.map b/node_modules/react-native-vision-camera/lib/commonjs/hooks/useFrameProcessor.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/index.js b/node_modules/react-native-vision-camera/lib/commonjs/index.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/index.js.map b/node_modules/react-native-vision-camera/lib/commonjs/index.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/skia/SkiaCameraCanvas.js b/node_modules/react-native-vision-camera/lib/commonjs/skia/SkiaCameraCanvas.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/skia/SkiaCameraCanvas.js.map b/node_modules/react-native-vision-camera/lib/commonjs/skia/SkiaCameraCanvas.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/skia/useSkiaFrameProcessor.js b/node_modules/react-native-vision-camera/lib/commonjs/skia/useSkiaFrameProcessor.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/skia/useSkiaFrameProcessor.js.map b/node_modules/react-native-vision-camera/lib/commonjs/skia/useSkiaFrameProcessor.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/types/CameraDevice.js b/node_modules/react-native-vision-camera/lib/commonjs/types/CameraDevice.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/types/CameraDevice.js.map b/node_modules/react-native-vision-camera/lib/commonjs/types/CameraDevice.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/types/CameraProps.js b/node_modules/react-native-vision-camera/lib/commonjs/types/CameraProps.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/types/CameraProps.js.map b/node_modules/react-native-vision-camera/lib/commonjs/types/CameraProps.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/types/CodeScanner.js b/node_modules/react-native-vision-camera/lib/commonjs/types/CodeScanner.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/types/CodeScanner.js.map b/node_modules/react-native-vision-camera/lib/commonjs/types/CodeScanner.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/types/Frame.js b/node_modules/react-native-vision-camera/lib/commonjs/types/Frame.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/types/Frame.js.map b/node_modules/react-native-vision-camera/lib/commonjs/types/Frame.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/types/Orientation.js b/node_modules/react-native-vision-camera/lib/commonjs/types/Orientation.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/types/Orientation.js.map b/node_modules/react-native-vision-camera/lib/commonjs/types/Orientation.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/types/OutputOrientation.js b/node_modules/react-native-vision-camera/lib/commonjs/types/OutputOrientation.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/types/OutputOrientation.js.map b/node_modules/react-native-vision-camera/lib/commonjs/types/OutputOrientation.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/types/PhotoFile.js b/node_modules/react-native-vision-camera/lib/commonjs/types/PhotoFile.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/types/PhotoFile.js.map b/node_modules/react-native-vision-camera/lib/commonjs/types/PhotoFile.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/types/PixelFormat.js b/node_modules/react-native-vision-camera/lib/commonjs/types/PixelFormat.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/types/PixelFormat.js.map b/node_modules/react-native-vision-camera/lib/commonjs/types/PixelFormat.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/types/Point.js b/node_modules/react-native-vision-camera/lib/commonjs/types/Point.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/types/Point.js.map b/node_modules/react-native-vision-camera/lib/commonjs/types/Point.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/types/Snapshot.js b/node_modules/react-native-vision-camera/lib/commonjs/types/Snapshot.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/types/Snapshot.js.map b/node_modules/react-native-vision-camera/lib/commonjs/types/Snapshot.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/types/TemporaryFile.js b/node_modules/react-native-vision-camera/lib/commonjs/types/TemporaryFile.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/types/TemporaryFile.js.map b/node_modules/react-native-vision-camera/lib/commonjs/types/TemporaryFile.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/types/VideoFile.js b/node_modules/react-native-vision-camera/lib/commonjs/types/VideoFile.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/commonjs/types/VideoFile.js.map b/node_modules/react-native-vision-camera/lib/commonjs/types/VideoFile.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/Camera.js b/node_modules/react-native-vision-camera/lib/module/Camera.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/Camera.js.map b/node_modules/react-native-vision-camera/lib/module/Camera.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/CameraDevices.js b/node_modules/react-native-vision-camera/lib/module/CameraDevices.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/CameraDevices.js.map b/node_modules/react-native-vision-camera/lib/module/CameraDevices.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/CameraError.js b/node_modules/react-native-vision-camera/lib/module/CameraError.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/CameraError.js.map b/node_modules/react-native-vision-camera/lib/module/CameraError.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/FpsGraph.js b/node_modules/react-native-vision-camera/lib/module/FpsGraph.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/FpsGraph.js.map b/node_modules/react-native-vision-camera/lib/module/FpsGraph.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/JSIHelper.js b/node_modules/react-native-vision-camera/lib/module/JSIHelper.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/JSIHelper.js.map b/node_modules/react-native-vision-camera/lib/module/JSIHelper.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/NativeCameraModule.js b/node_modules/react-native-vision-camera/lib/module/NativeCameraModule.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/NativeCameraModule.js.map b/node_modules/react-native-vision-camera/lib/module/NativeCameraModule.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/NativeCameraView.js b/node_modules/react-native-vision-camera/lib/module/NativeCameraView.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/NativeCameraView.js.map b/node_modules/react-native-vision-camera/lib/module/NativeCameraView.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/RotationHelper.js b/node_modules/react-native-vision-camera/lib/module/RotationHelper.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/RotationHelper.js.map b/node_modules/react-native-vision-camera/lib/module/RotationHelper.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/dependencies/ModuleProxy.js b/node_modules/react-native-vision-camera/lib/module/dependencies/ModuleProxy.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/dependencies/ModuleProxy.js.map b/node_modules/react-native-vision-camera/lib/module/dependencies/ModuleProxy.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/dependencies/ReanimatedProxy.js b/node_modules/react-native-vision-camera/lib/module/dependencies/ReanimatedProxy.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/dependencies/ReanimatedProxy.js.map b/node_modules/react-native-vision-camera/lib/module/dependencies/ReanimatedProxy.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/dependencies/SkiaProxy.js b/node_modules/react-native-vision-camera/lib/module/dependencies/SkiaProxy.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/dependencies/SkiaProxy.js.map b/node_modules/react-native-vision-camera/lib/module/dependencies/SkiaProxy.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/dependencies/WorkletsProxy.js b/node_modules/react-native-vision-camera/lib/module/dependencies/WorkletsProxy.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/dependencies/WorkletsProxy.js.map b/node_modules/react-native-vision-camera/lib/module/dependencies/WorkletsProxy.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/devices/Templates.js b/node_modules/react-native-vision-camera/lib/module/devices/Templates.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/devices/Templates.js.map b/node_modules/react-native-vision-camera/lib/module/devices/Templates.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/devices/getCameraDevice.js b/node_modules/react-native-vision-camera/lib/module/devices/getCameraDevice.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/devices/getCameraDevice.js.map b/node_modules/react-native-vision-camera/lib/module/devices/getCameraDevice.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/devices/getCameraFormat.js b/node_modules/react-native-vision-camera/lib/module/devices/getCameraFormat.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/devices/getCameraFormat.js.map b/node_modules/react-native-vision-camera/lib/module/devices/getCameraFormat.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/expo-plugin/@types.js b/node_modules/react-native-vision-camera/lib/module/expo-plugin/@types.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/expo-plugin/@types.js.map b/node_modules/react-native-vision-camera/lib/module/expo-plugin/@types.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/expo-plugin/withAndroidMLKitVisionModel.js b/node_modules/react-native-vision-camera/lib/module/expo-plugin/withAndroidMLKitVisionModel.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/expo-plugin/withAndroidMLKitVisionModel.js.map b/node_modules/react-native-vision-camera/lib/module/expo-plugin/withAndroidMLKitVisionModel.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/expo-plugin/withEnableFrameProcessorsAndroid.js b/node_modules/react-native-vision-camera/lib/module/expo-plugin/withEnableFrameProcessorsAndroid.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/expo-plugin/withEnableFrameProcessorsAndroid.js.map b/node_modules/react-native-vision-camera/lib/module/expo-plugin/withEnableFrameProcessorsAndroid.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/expo-plugin/withEnableFrameProcessorsIOS.js b/node_modules/react-native-vision-camera/lib/module/expo-plugin/withEnableFrameProcessorsIOS.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/expo-plugin/withEnableFrameProcessorsIOS.js.map b/node_modules/react-native-vision-camera/lib/module/expo-plugin/withEnableFrameProcessorsIOS.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/expo-plugin/withEnableLocationIOS.js b/node_modules/react-native-vision-camera/lib/module/expo-plugin/withEnableLocationIOS.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/expo-plugin/withEnableLocationIOS.js.map b/node_modules/react-native-vision-camera/lib/module/expo-plugin/withEnableLocationIOS.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/expo-plugin/withVisionCamera.js b/node_modules/react-native-vision-camera/lib/module/expo-plugin/withVisionCamera.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/expo-plugin/withVisionCamera.js.map b/node_modules/react-native-vision-camera/lib/module/expo-plugin/withVisionCamera.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/expo-plugin/writeToPodfile.js b/node_modules/react-native-vision-camera/lib/module/expo-plugin/writeToPodfile.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/expo-plugin/writeToPodfile.js.map b/node_modules/react-native-vision-camera/lib/module/expo-plugin/writeToPodfile.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/frame-processors/FrameProcessorsUnavailableError.js b/node_modules/react-native-vision-camera/lib/module/frame-processors/FrameProcessorsUnavailableError.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/frame-processors/FrameProcessorsUnavailableError.js.map b/node_modules/react-native-vision-camera/lib/module/frame-processors/FrameProcessorsUnavailableError.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/frame-processors/VisionCameraProxy.js b/node_modules/react-native-vision-camera/lib/module/frame-processors/VisionCameraProxy.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/frame-processors/VisionCameraProxy.js.map b/node_modules/react-native-vision-camera/lib/module/frame-processors/VisionCameraProxy.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/frame-processors/runAsync.js b/node_modules/react-native-vision-camera/lib/module/frame-processors/runAsync.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/frame-processors/runAsync.js.map b/node_modules/react-native-vision-camera/lib/module/frame-processors/runAsync.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/frame-processors/runAtTargetFps.js b/node_modules/react-native-vision-camera/lib/module/frame-processors/runAtTargetFps.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/frame-processors/runAtTargetFps.js.map b/node_modules/react-native-vision-camera/lib/module/frame-processors/runAtTargetFps.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/frame-processors/throwErrorOnJS.js b/node_modules/react-native-vision-camera/lib/module/frame-processors/throwErrorOnJS.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/frame-processors/throwErrorOnJS.js.map b/node_modules/react-native-vision-camera/lib/module/frame-processors/throwErrorOnJS.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/frame-processors/withFrameRefCounting.js b/node_modules/react-native-vision-camera/lib/module/frame-processors/withFrameRefCounting.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/frame-processors/withFrameRefCounting.js.map b/node_modules/react-native-vision-camera/lib/module/frame-processors/withFrameRefCounting.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/hooks/useCameraDevice.js b/node_modules/react-native-vision-camera/lib/module/hooks/useCameraDevice.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/hooks/useCameraDevice.js.map b/node_modules/react-native-vision-camera/lib/module/hooks/useCameraDevice.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/hooks/useCameraDevices.js b/node_modules/react-native-vision-camera/lib/module/hooks/useCameraDevices.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/hooks/useCameraDevices.js.map b/node_modules/react-native-vision-camera/lib/module/hooks/useCameraDevices.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/hooks/useCameraFormat.js b/node_modules/react-native-vision-camera/lib/module/hooks/useCameraFormat.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/hooks/useCameraFormat.js.map b/node_modules/react-native-vision-camera/lib/module/hooks/useCameraFormat.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/hooks/useCameraPermission.js b/node_modules/react-native-vision-camera/lib/module/hooks/useCameraPermission.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/hooks/useCameraPermission.js.map b/node_modules/react-native-vision-camera/lib/module/hooks/useCameraPermission.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/hooks/useCodeScanner.js b/node_modules/react-native-vision-camera/lib/module/hooks/useCodeScanner.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/hooks/useCodeScanner.js.map b/node_modules/react-native-vision-camera/lib/module/hooks/useCodeScanner.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/hooks/useFrameProcessor.js b/node_modules/react-native-vision-camera/lib/module/hooks/useFrameProcessor.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/hooks/useFrameProcessor.js.map b/node_modules/react-native-vision-camera/lib/module/hooks/useFrameProcessor.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/index.js b/node_modules/react-native-vision-camera/lib/module/index.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/index.js.map b/node_modules/react-native-vision-camera/lib/module/index.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/skia/SkiaCameraCanvas.js b/node_modules/react-native-vision-camera/lib/module/skia/SkiaCameraCanvas.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/skia/SkiaCameraCanvas.js.map b/node_modules/react-native-vision-camera/lib/module/skia/SkiaCameraCanvas.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/skia/useSkiaFrameProcessor.js b/node_modules/react-native-vision-camera/lib/module/skia/useSkiaFrameProcessor.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/skia/useSkiaFrameProcessor.js.map b/node_modules/react-native-vision-camera/lib/module/skia/useSkiaFrameProcessor.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/types/CameraDevice.js b/node_modules/react-native-vision-camera/lib/module/types/CameraDevice.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/types/CameraDevice.js.map b/node_modules/react-native-vision-camera/lib/module/types/CameraDevice.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/types/CameraProps.js b/node_modules/react-native-vision-camera/lib/module/types/CameraProps.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/types/CameraProps.js.map b/node_modules/react-native-vision-camera/lib/module/types/CameraProps.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/types/CodeScanner.js b/node_modules/react-native-vision-camera/lib/module/types/CodeScanner.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/types/CodeScanner.js.map b/node_modules/react-native-vision-camera/lib/module/types/CodeScanner.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/types/Frame.js b/node_modules/react-native-vision-camera/lib/module/types/Frame.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/types/Frame.js.map b/node_modules/react-native-vision-camera/lib/module/types/Frame.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/types/Orientation.js b/node_modules/react-native-vision-camera/lib/module/types/Orientation.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/types/Orientation.js.map b/node_modules/react-native-vision-camera/lib/module/types/Orientation.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/types/OutputOrientation.js b/node_modules/react-native-vision-camera/lib/module/types/OutputOrientation.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/types/OutputOrientation.js.map b/node_modules/react-native-vision-camera/lib/module/types/OutputOrientation.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/types/PhotoFile.js b/node_modules/react-native-vision-camera/lib/module/types/PhotoFile.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/types/PhotoFile.js.map b/node_modules/react-native-vision-camera/lib/module/types/PhotoFile.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/types/PixelFormat.js b/node_modules/react-native-vision-camera/lib/module/types/PixelFormat.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/types/PixelFormat.js.map b/node_modules/react-native-vision-camera/lib/module/types/PixelFormat.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/types/Point.js b/node_modules/react-native-vision-camera/lib/module/types/Point.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/types/Point.js.map b/node_modules/react-native-vision-camera/lib/module/types/Point.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/types/Snapshot.js b/node_modules/react-native-vision-camera/lib/module/types/Snapshot.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/types/Snapshot.js.map b/node_modules/react-native-vision-camera/lib/module/types/Snapshot.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/types/TemporaryFile.js b/node_modules/react-native-vision-camera/lib/module/types/TemporaryFile.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/types/TemporaryFile.js.map b/node_modules/react-native-vision-camera/lib/module/types/TemporaryFile.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/types/VideoFile.js b/node_modules/react-native-vision-camera/lib/module/types/VideoFile.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/module/types/VideoFile.js.map b/node_modules/react-native-vision-camera/lib/module/types/VideoFile.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/Camera.d.ts b/node_modules/react-native-vision-camera/lib/typescript/Camera.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/Camera.d.ts.map b/node_modules/react-native-vision-camera/lib/typescript/Camera.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/CameraDevices.d.ts b/node_modules/react-native-vision-camera/lib/typescript/CameraDevices.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/CameraDevices.d.ts.map b/node_modules/react-native-vision-camera/lib/typescript/CameraDevices.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/CameraError.d.ts b/node_modules/react-native-vision-camera/lib/typescript/CameraError.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/CameraError.d.ts.map b/node_modules/react-native-vision-camera/lib/typescript/CameraError.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/FpsGraph.d.ts b/node_modules/react-native-vision-camera/lib/typescript/FpsGraph.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/FpsGraph.d.ts.map b/node_modules/react-native-vision-camera/lib/typescript/FpsGraph.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/JSIHelper.d.ts b/node_modules/react-native-vision-camera/lib/typescript/JSIHelper.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/JSIHelper.d.ts.map b/node_modules/react-native-vision-camera/lib/typescript/JSIHelper.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/NativeCameraModule.d.ts b/node_modules/react-native-vision-camera/lib/typescript/NativeCameraModule.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/NativeCameraModule.d.ts.map b/node_modules/react-native-vision-camera/lib/typescript/NativeCameraModule.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/NativeCameraView.d.ts b/node_modules/react-native-vision-camera/lib/typescript/NativeCameraView.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/NativeCameraView.d.ts.map b/node_modules/react-native-vision-camera/lib/typescript/NativeCameraView.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/RotationHelper.d.ts b/node_modules/react-native-vision-camera/lib/typescript/RotationHelper.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/RotationHelper.d.ts.map b/node_modules/react-native-vision-camera/lib/typescript/RotationHelper.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/dependencies/ModuleProxy.d.ts b/node_modules/react-native-vision-camera/lib/typescript/dependencies/ModuleProxy.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/dependencies/ModuleProxy.d.ts.map b/node_modules/react-native-vision-camera/lib/typescript/dependencies/ModuleProxy.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/dependencies/ReanimatedProxy.d.ts b/node_modules/react-native-vision-camera/lib/typescript/dependencies/ReanimatedProxy.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/dependencies/ReanimatedProxy.d.ts.map b/node_modules/react-native-vision-camera/lib/typescript/dependencies/ReanimatedProxy.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/dependencies/SkiaProxy.d.ts b/node_modules/react-native-vision-camera/lib/typescript/dependencies/SkiaProxy.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/dependencies/SkiaProxy.d.ts.map b/node_modules/react-native-vision-camera/lib/typescript/dependencies/SkiaProxy.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/dependencies/WorkletsProxy.d.ts b/node_modules/react-native-vision-camera/lib/typescript/dependencies/WorkletsProxy.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/dependencies/WorkletsProxy.d.ts.map b/node_modules/react-native-vision-camera/lib/typescript/dependencies/WorkletsProxy.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/devices/Templates.d.ts b/node_modules/react-native-vision-camera/lib/typescript/devices/Templates.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/devices/Templates.d.ts.map b/node_modules/react-native-vision-camera/lib/typescript/devices/Templates.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/devices/getCameraDevice.d.ts b/node_modules/react-native-vision-camera/lib/typescript/devices/getCameraDevice.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/devices/getCameraDevice.d.ts.map b/node_modules/react-native-vision-camera/lib/typescript/devices/getCameraDevice.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/devices/getCameraFormat.d.ts b/node_modules/react-native-vision-camera/lib/typescript/devices/getCameraFormat.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/devices/getCameraFormat.d.ts.map b/node_modules/react-native-vision-camera/lib/typescript/devices/getCameraFormat.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/expo-plugin/@types.d.ts b/node_modules/react-native-vision-camera/lib/typescript/expo-plugin/@types.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/expo-plugin/@types.d.ts.map b/node_modules/react-native-vision-camera/lib/typescript/expo-plugin/@types.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/expo-plugin/withAndroidMLKitVisionModel.d.ts b/node_modules/react-native-vision-camera/lib/typescript/expo-plugin/withAndroidMLKitVisionModel.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/expo-plugin/withAndroidMLKitVisionModel.d.ts.map b/node_modules/react-native-vision-camera/lib/typescript/expo-plugin/withAndroidMLKitVisionModel.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/expo-plugin/withEnableFrameProcessorsAndroid.d.ts b/node_modules/react-native-vision-camera/lib/typescript/expo-plugin/withEnableFrameProcessorsAndroid.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/expo-plugin/withEnableFrameProcessorsAndroid.d.ts.map b/node_modules/react-native-vision-camera/lib/typescript/expo-plugin/withEnableFrameProcessorsAndroid.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/expo-plugin/withEnableFrameProcessorsIOS.d.ts b/node_modules/react-native-vision-camera/lib/typescript/expo-plugin/withEnableFrameProcessorsIOS.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/expo-plugin/withEnableFrameProcessorsIOS.d.ts.map b/node_modules/react-native-vision-camera/lib/typescript/expo-plugin/withEnableFrameProcessorsIOS.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/expo-plugin/withEnableLocationIOS.d.ts b/node_modules/react-native-vision-camera/lib/typescript/expo-plugin/withEnableLocationIOS.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/expo-plugin/withEnableLocationIOS.d.ts.map b/node_modules/react-native-vision-camera/lib/typescript/expo-plugin/withEnableLocationIOS.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/expo-plugin/withVisionCamera.d.ts b/node_modules/react-native-vision-camera/lib/typescript/expo-plugin/withVisionCamera.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/expo-plugin/withVisionCamera.d.ts.map b/node_modules/react-native-vision-camera/lib/typescript/expo-plugin/withVisionCamera.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/expo-plugin/writeToPodfile.d.ts b/node_modules/react-native-vision-camera/lib/typescript/expo-plugin/writeToPodfile.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/expo-plugin/writeToPodfile.d.ts.map b/node_modules/react-native-vision-camera/lib/typescript/expo-plugin/writeToPodfile.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/frame-processors/FrameProcessorsUnavailableError.d.ts b/node_modules/react-native-vision-camera/lib/typescript/frame-processors/FrameProcessorsUnavailableError.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/frame-processors/FrameProcessorsUnavailableError.d.ts.map b/node_modules/react-native-vision-camera/lib/typescript/frame-processors/FrameProcessorsUnavailableError.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/frame-processors/VisionCameraProxy.d.ts b/node_modules/react-native-vision-camera/lib/typescript/frame-processors/VisionCameraProxy.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/frame-processors/VisionCameraProxy.d.ts.map b/node_modules/react-native-vision-camera/lib/typescript/frame-processors/VisionCameraProxy.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/frame-processors/runAsync.d.ts b/node_modules/react-native-vision-camera/lib/typescript/frame-processors/runAsync.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/frame-processors/runAsync.d.ts.map b/node_modules/react-native-vision-camera/lib/typescript/frame-processors/runAsync.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/frame-processors/runAtTargetFps.d.ts b/node_modules/react-native-vision-camera/lib/typescript/frame-processors/runAtTargetFps.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/frame-processors/runAtTargetFps.d.ts.map b/node_modules/react-native-vision-camera/lib/typescript/frame-processors/runAtTargetFps.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/frame-processors/throwErrorOnJS.d.ts b/node_modules/react-native-vision-camera/lib/typescript/frame-processors/throwErrorOnJS.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/frame-processors/throwErrorOnJS.d.ts.map b/node_modules/react-native-vision-camera/lib/typescript/frame-processors/throwErrorOnJS.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/frame-processors/withFrameRefCounting.d.ts b/node_modules/react-native-vision-camera/lib/typescript/frame-processors/withFrameRefCounting.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/frame-processors/withFrameRefCounting.d.ts.map b/node_modules/react-native-vision-camera/lib/typescript/frame-processors/withFrameRefCounting.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/hooks/useCameraDevice.d.ts b/node_modules/react-native-vision-camera/lib/typescript/hooks/useCameraDevice.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/hooks/useCameraDevice.d.ts.map b/node_modules/react-native-vision-camera/lib/typescript/hooks/useCameraDevice.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/hooks/useCameraDevices.d.ts b/node_modules/react-native-vision-camera/lib/typescript/hooks/useCameraDevices.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/hooks/useCameraDevices.d.ts.map b/node_modules/react-native-vision-camera/lib/typescript/hooks/useCameraDevices.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/hooks/useCameraFormat.d.ts b/node_modules/react-native-vision-camera/lib/typescript/hooks/useCameraFormat.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/hooks/useCameraFormat.d.ts.map b/node_modules/react-native-vision-camera/lib/typescript/hooks/useCameraFormat.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/hooks/useCameraPermission.d.ts b/node_modules/react-native-vision-camera/lib/typescript/hooks/useCameraPermission.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/hooks/useCameraPermission.d.ts.map b/node_modules/react-native-vision-camera/lib/typescript/hooks/useCameraPermission.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/hooks/useCodeScanner.d.ts b/node_modules/react-native-vision-camera/lib/typescript/hooks/useCodeScanner.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/hooks/useCodeScanner.d.ts.map b/node_modules/react-native-vision-camera/lib/typescript/hooks/useCodeScanner.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/hooks/useFrameProcessor.d.ts b/node_modules/react-native-vision-camera/lib/typescript/hooks/useFrameProcessor.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/hooks/useFrameProcessor.d.ts.map b/node_modules/react-native-vision-camera/lib/typescript/hooks/useFrameProcessor.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/index.d.ts b/node_modules/react-native-vision-camera/lib/typescript/index.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/index.d.ts.map b/node_modules/react-native-vision-camera/lib/typescript/index.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/skia/SkiaCameraCanvas.d.ts b/node_modules/react-native-vision-camera/lib/typescript/skia/SkiaCameraCanvas.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/skia/SkiaCameraCanvas.d.ts.map b/node_modules/react-native-vision-camera/lib/typescript/skia/SkiaCameraCanvas.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/skia/useSkiaFrameProcessor.d.ts b/node_modules/react-native-vision-camera/lib/typescript/skia/useSkiaFrameProcessor.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/skia/useSkiaFrameProcessor.d.ts.map b/node_modules/react-native-vision-camera/lib/typescript/skia/useSkiaFrameProcessor.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/types/CameraDevice.d.ts b/node_modules/react-native-vision-camera/lib/typescript/types/CameraDevice.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/types/CameraDevice.d.ts.map b/node_modules/react-native-vision-camera/lib/typescript/types/CameraDevice.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/types/CameraProps.d.ts b/node_modules/react-native-vision-camera/lib/typescript/types/CameraProps.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/types/CameraProps.d.ts.map b/node_modules/react-native-vision-camera/lib/typescript/types/CameraProps.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/types/CodeScanner.d.ts b/node_modules/react-native-vision-camera/lib/typescript/types/CodeScanner.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/types/CodeScanner.d.ts.map b/node_modules/react-native-vision-camera/lib/typescript/types/CodeScanner.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/types/Frame.d.ts b/node_modules/react-native-vision-camera/lib/typescript/types/Frame.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/types/Frame.d.ts.map b/node_modules/react-native-vision-camera/lib/typescript/types/Frame.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/types/Orientation.d.ts b/node_modules/react-native-vision-camera/lib/typescript/types/Orientation.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/types/Orientation.d.ts.map b/node_modules/react-native-vision-camera/lib/typescript/types/Orientation.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/types/OutputOrientation.d.ts b/node_modules/react-native-vision-camera/lib/typescript/types/OutputOrientation.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/types/OutputOrientation.d.ts.map b/node_modules/react-native-vision-camera/lib/typescript/types/OutputOrientation.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/types/PhotoFile.d.ts b/node_modules/react-native-vision-camera/lib/typescript/types/PhotoFile.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/types/PhotoFile.d.ts.map b/node_modules/react-native-vision-camera/lib/typescript/types/PhotoFile.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/types/PixelFormat.d.ts b/node_modules/react-native-vision-camera/lib/typescript/types/PixelFormat.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/types/PixelFormat.d.ts.map b/node_modules/react-native-vision-camera/lib/typescript/types/PixelFormat.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/types/Point.d.ts b/node_modules/react-native-vision-camera/lib/typescript/types/Point.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/types/Point.d.ts.map b/node_modules/react-native-vision-camera/lib/typescript/types/Point.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/types/Snapshot.d.ts b/node_modules/react-native-vision-camera/lib/typescript/types/Snapshot.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/types/Snapshot.d.ts.map b/node_modules/react-native-vision-camera/lib/typescript/types/Snapshot.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/types/TemporaryFile.d.ts b/node_modules/react-native-vision-camera/lib/typescript/types/TemporaryFile.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/types/TemporaryFile.d.ts.map b/node_modules/react-native-vision-camera/lib/typescript/types/TemporaryFile.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/types/VideoFile.d.ts b/node_modules/react-native-vision-camera/lib/typescript/types/VideoFile.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/lib/typescript/types/VideoFile.d.ts.map b/node_modules/react-native-vision-camera/lib/typescript/types/VideoFile.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/package.json b/node_modules/react-native-vision-camera/package.json
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/react-native.config.js b/node_modules/react-native-vision-camera/react-native.config.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/src/Camera.tsx b/node_modules/react-native-vision-camera/src/Camera.tsx
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/src/CameraDevices.ts b/node_modules/react-native-vision-camera/src/CameraDevices.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/src/CameraError.ts b/node_modules/react-native-vision-camera/src/CameraError.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/src/FpsGraph.tsx b/node_modules/react-native-vision-camera/src/FpsGraph.tsx
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/src/JSIHelper.ts b/node_modules/react-native-vision-camera/src/JSIHelper.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/src/NativeCameraModule.ts b/node_modules/react-native-vision-camera/src/NativeCameraModule.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/src/NativeCameraView.ts b/node_modules/react-native-vision-camera/src/NativeCameraView.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/src/RotationHelper.ts b/node_modules/react-native-vision-camera/src/RotationHelper.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/src/dependencies/ModuleProxy.ts b/node_modules/react-native-vision-camera/src/dependencies/ModuleProxy.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/src/dependencies/ReanimatedProxy.ts b/node_modules/react-native-vision-camera/src/dependencies/ReanimatedProxy.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/src/dependencies/SkiaProxy.ts b/node_modules/react-native-vision-camera/src/dependencies/SkiaProxy.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/src/dependencies/WorkletsProxy.ts b/node_modules/react-native-vision-camera/src/dependencies/WorkletsProxy.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/src/devices/Templates.ts b/node_modules/react-native-vision-camera/src/devices/Templates.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/src/devices/getCameraDevice.ts b/node_modules/react-native-vision-camera/src/devices/getCameraDevice.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/src/devices/getCameraFormat.ts b/node_modules/react-native-vision-camera/src/devices/getCameraFormat.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/src/expo-plugin/@types.ts b/node_modules/react-native-vision-camera/src/expo-plugin/@types.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/src/expo-plugin/withAndroidMLKitVisionModel.ts b/node_modules/react-native-vision-camera/src/expo-plugin/withAndroidMLKitVisionModel.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/src/expo-plugin/withEnableFrameProcessorsAndroid.ts b/node_modules/react-native-vision-camera/src/expo-plugin/withEnableFrameProcessorsAndroid.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/src/expo-plugin/withEnableFrameProcessorsIOS.ts b/node_modules/react-native-vision-camera/src/expo-plugin/withEnableFrameProcessorsIOS.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/src/expo-plugin/withEnableLocationIOS.ts b/node_modules/react-native-vision-camera/src/expo-plugin/withEnableLocationIOS.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/src/expo-plugin/withVisionCamera.ts b/node_modules/react-native-vision-camera/src/expo-plugin/withVisionCamera.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/src/expo-plugin/writeToPodfile.ts b/node_modules/react-native-vision-camera/src/expo-plugin/writeToPodfile.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/src/frame-processors/FrameProcessorsUnavailableError.ts b/node_modules/react-native-vision-camera/src/frame-processors/FrameProcessorsUnavailableError.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/src/frame-processors/VisionCameraProxy.ts b/node_modules/react-native-vision-camera/src/frame-processors/VisionCameraProxy.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/src/frame-processors/runAsync.ts b/node_modules/react-native-vision-camera/src/frame-processors/runAsync.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/src/frame-processors/runAtTargetFps.ts b/node_modules/react-native-vision-camera/src/frame-processors/runAtTargetFps.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/src/frame-processors/throwErrorOnJS.ts b/node_modules/react-native-vision-camera/src/frame-processors/throwErrorOnJS.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/src/frame-processors/withFrameRefCounting.ts b/node_modules/react-native-vision-camera/src/frame-processors/withFrameRefCounting.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/src/hooks/useCameraDevice.ts b/node_modules/react-native-vision-camera/src/hooks/useCameraDevice.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/src/hooks/useCameraDevices.ts b/node_modules/react-native-vision-camera/src/hooks/useCameraDevices.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/src/hooks/useCameraFormat.ts b/node_modules/react-native-vision-camera/src/hooks/useCameraFormat.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/src/hooks/useCameraPermission.ts b/node_modules/react-native-vision-camera/src/hooks/useCameraPermission.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/src/hooks/useCodeScanner.ts b/node_modules/react-native-vision-camera/src/hooks/useCodeScanner.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/src/hooks/useFrameProcessor.ts b/node_modules/react-native-vision-camera/src/hooks/useFrameProcessor.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/src/index.ts b/node_modules/react-native-vision-camera/src/index.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/src/skia/SkiaCameraCanvas.tsx b/node_modules/react-native-vision-camera/src/skia/SkiaCameraCanvas.tsx
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/src/skia/useSkiaFrameProcessor.ts b/node_modules/react-native-vision-camera/src/skia/useSkiaFrameProcessor.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/src/types/CameraDevice.ts b/node_modules/react-native-vision-camera/src/types/CameraDevice.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/src/types/CameraProps.ts b/node_modules/react-native-vision-camera/src/types/CameraProps.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/src/types/CodeScanner.ts b/node_modules/react-native-vision-camera/src/types/CodeScanner.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/src/types/Frame.ts b/node_modules/react-native-vision-camera/src/types/Frame.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/src/types/Orientation.ts b/node_modules/react-native-vision-camera/src/types/Orientation.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/src/types/OutputOrientation.ts b/node_modules/react-native-vision-camera/src/types/OutputOrientation.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/src/types/PhotoFile.ts b/node_modules/react-native-vision-camera/src/types/PhotoFile.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/src/types/PixelFormat.ts b/node_modules/react-native-vision-camera/src/types/PixelFormat.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/src/types/Point.ts b/node_modules/react-native-vision-camera/src/types/Point.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/src/types/Snapshot.ts b/node_modules/react-native-vision-camera/src/types/Snapshot.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/src/types/TemporaryFile.ts b/node_modules/react-native-vision-camera/src/types/TemporaryFile.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-vision-camera/src/types/VideoFile.ts b/node_modules/react-native-vision-camera/src/types/VideoFile.ts
+old mode 100644
+new mode 100755

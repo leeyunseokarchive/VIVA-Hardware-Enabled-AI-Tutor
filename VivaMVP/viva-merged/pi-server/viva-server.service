@@ -1,0 +1,15 @@
+[Unit]
+Description=Viva HW Server
+After=network.target
+
+[Service]
+# 오디오 디바이스는 app.py 기본값(micboost/dmixout, /etc/asound.conf 정의)을 쓴다.
+# USB 동글 등 다른 구성이면 여기서 VIVA_RECORD_DEVICE / VIVA_PLAY_DEVICE 로 교체.
+Environment=VIVA_FOCUS_MODE=auto
+Environment=VIVA_FOCUS_DISTANCE_CM=25
+ExecStart=/usr/bin/python3 /home/viva/pi-server/app.py
+Restart=always
+User=viva
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,14 @@
+# viva-wake.service
+[Unit]
+Description=Viva wake PCM relay (WS :8788)
+After=network.target
+
+[Service]
+# journalctl -u viva-wake 로 print 가 바로 보이게 (viva-eyes 와 동일)
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/usr/bin/python3 /home/viva/pi-server/wake.py
+Restart=always
+User=viva
+
+[Install]
+WantedBy=multi-user.target

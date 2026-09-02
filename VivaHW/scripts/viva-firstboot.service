@@ -1,0 +1,11 @@
+[Unit]
+Description=VIVA first-boot uniquification (ssh host keys)
+ConditionPathExists=/etc/viva-firstboot-pending
+Before=ssh.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/viva-firstboot.sh
+
+[Install]
+WantedBy=multi-user.target

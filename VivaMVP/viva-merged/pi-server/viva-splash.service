@@ -1,0 +1,60 @@
+[Unit]
+Description=Viva boot splash (ARTFLY 워드마크 + 로딩 아크, /dev/fb0 직접 기록)
+# sysinit.target 등 기본 의존성을 안 기다리고 getty 보다도 먼저 뜨게 해
+# 콘솔 로그인 프롬프트보다 앞서 그림을 띄운다 - 대신 루트 파일시스템
+# (splash/*.raw 읽기)만 있으면 되므로 local-fs.target 뒤로만 미룬다.
+DefaultDependencies=no
+After=local-fs.target
+# fb0 는 udev 가 vc4 바인드 + video 그룹 적용을 끝낸 뒤에야 쓸 수 있다(그 전엔
+# Permission denied/No such device 플러드 - 실기기 2026-08-18). dev-fb0.device
+# 유닛은 이 보드에서 영영 inactive(udev 가 fb 에 systemd 태그를 안 붙여 활성화
+# 이벤트가 없음, TAGS=:seat: 실측)라 BindsTo/After 로는 대기 불가 - ExecStart
+# 루프 앞의 writable 폴링으로 기다린다.
+# getty 가 fbcon 에 로그인 프롬프트를 그려 스플래시 위를 덮지 않게 밀어낸다
+# (viva-eyes.service 와 동일한 이유) - 다만 getty 시작을 기다리는 순간만큼
+# 첫 프레임 출력이 살짝 늦어질 수 있다.
+Conflicts=getty@tty1.service
+After=getty@tty1.service
+# eyes 가 뜨는 순간 이 루프는 반드시 죽어야 한다(fb0 경합 금지). 처음엔
+# Conflicts=viva-eyes.service 로 걸었는데, 부팅 트랜잭션에서 두 유닛의 start
+# 잡이 동시에 잡히면 systemd 가 충돌 해소로 한쪽 잡을 통째로 버린다 - 실기기
+# (2026-08-18)에서 viva-eyes 시작 잡이 소거돼 눈이 영영 안 떴다. Conflicts 는
+# "이미 도는 유닛 vs 새 start" 에만 안전하다(viva-eyes↔getty 가 그 경우).
+# 대신 viva-eyes.service 의 ExecStartPre 가 이 유닛을 명시적으로 stop 한다.
+Before=viva-eyes.service
+# DefaultDependencies=no 라 shutdown.target 과의 암묵적 Conflicts+Before 가
+# 안 걸린다 - 명시로 채워둔다. 안 그러면 viva-eyes 가 끝내 못 뜬 상태(크래시
+# 루프 등)로 종료에 들어갈 때 이 루프가 안 죽고 계속 프레임을 cat 해서
+# viva-splash-off.service 의 ExecStop 이 쓴 off.raw 를 덮어써버린다.
+Conflicts=shutdown.target
+Before=shutdown.target
+# 설치 때 --bake 를 안 돌렸으면(프레임 파일 없음) 조용히 스킵한다 - 없는데
+# 돌면 cat 이 매번 에러만 찍는 루프가 된다.
+ConditionPathExists=/home/viva/pi-server/splash/boot-00.raw
+
+[Service]
+Type=simple
+# 렌더러(viva-eyes.service)와 같은 이유 - 이 루프도 잃을 상태가 없고,
+# eyes 가 뜨자마자 바로 내려가야 하니 기본 90초 stop 대기를 짧게 자른다.
+TimeoutStopSec=3
+# 콘솔 커서 숨김 + 화면 클리어 (viva-eyes.service 와 동일 라인).
+# '+' = root 로 실행 - User=viva 는 /dev/tty1 에 못 쓴다.
+ExecStartPre=+/bin/sh -c 'printf "\033[?25l\033[2J" > /dev/tty1 || true'
+# 12프레임을 0.2초 간격으로 순환(전체 스윕 주기 12*0.2=2.4초), 마지막
+# 프레임(11=풀 링) 다음엔 0으로 되돌아간다. sleep 이 있어 SIGTERM 은 늦어도
+# 0.2초 안에 sh/cat 모두에게 전달돼(KillMode=control-group 기본값) 즉시 죽는다.
+# "% 12" = splash.py 의 N_FRAMES - 셸 루프라 그 상수를 못 읽으므로 여기 하드코딩;
+# N_FRAMES 를 바꾸면 이 줄도 같이 고쳐야 한다.
+# %% = systemd 이스케이프(% 는 유닛 지정자라 %02d 가 "Invalid slot" fatal, 실기기
+# systemd-analyze verify 로 실증) - sh 에는 %02d 로 전달된다. "%% 12" 의 % 도 동일.
+# [ -w ] 를 매 프레임 재확인한다 - 부팅 중 simplefb(부트로더) 가 vc4 로
+# 교체되는 순간 fb0 이 잠깐 root:root 로 재생성돼(udev 가 video 그룹을 다시
+# 줄 때까지 ~10초, 실기기 2026-08-18) 그 창에서 cat 이 Permission denied 를
+# 저널에 쏟는다. stderr 도 버린다(|| true 로 이미 무해, 로그만 오염).
+ExecStart=/bin/sh -c 'd=/home/viva/pi-server/splash; i=0; while :; do if [ -w /dev/fb0 ]; then cat "$d/boot-$(printf %%02d $i).raw" > /dev/fb0 2>/dev/null || true; i=$(( (i + 1) %% 12 )); fi; sleep 0.2; done'
+User=viva
+# /dev/fb0 쓰기에 video 그룹 필요 (viva-eyes.service 와 동일).
+SupplementaryGroups=video
+
+[Install]
+WantedBy=multi-user.target

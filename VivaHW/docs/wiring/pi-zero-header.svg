@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 920" width="1000" role="img"
+     aria-label="Raspberry Pi Zero WH 40핀 헤더 VIVA 결선도">
+  <rect width="1000" height="920" fill="#ffffff"/>
+  <text x="24" y="32" font-family="sans-serif" font-size="22" font-weight="700" fill="#222">Raspberry Pi Zero WH - VIVA 결선도 (40핀 헤더)</text>
+  <rect x="24" y="40" width="952" height="26" rx="4" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="500.0" y="58" font-family="sans-serif" font-size="13" font-weight="700" fill="#b91c1c" text-anchor="middle">⚠ 핀 1 은 3.3V 전용입니다 - INMP441 VDD 를 5V 에 연결하면 모듈이 즉시 파손됩니다</text>
+  <text x="24" y="76" font-family="sans-serif" font-size="11" fill="#555">홀수 핀 = 왼쪽 열 · 짝수 핀 = 오른쪽 열 (Raspberry Pi 표준 배열) · 위쪽이 핀 1, 아래쪽이 핀 40</text>
+  <rect x="380" y="80" width="140" height="620" rx="6" fill="#f4f4f5" stroke="#d4d4d8"/>
+  <!-- 40핀 -->
+  <!-- 핀 1: 3.3V -->
+  <circle cx="410" cy="104" r="9" fill="#2563eb" stroke="#1e40af" stroke-width="1.5"/>
+  <text x="410" y="108" font-family="sans-serif" font-size="10" fill="#ffffff" text-anchor="middle">1</text>
+  <text x="372" y="108" font-family="sans-serif" font-size="12" fill="#222" text-anchor="end">3.3V - INMP441 VDD</text>
+  <text x="372" y="122" font-family="sans-serif" font-size="11" font-weight="700" fill="#dc2626" text-anchor="end">5V 금지 - 즉시 파손</text>
+  <!-- 핀 2: 5V -->
+  <circle cx="490" cy="104" r="9" fill="#c2410c" stroke="#7c2d12" stroke-width="1.5"/>
+  <text x="490" y="108" font-family="sans-serif" font-size="10" fill="#ffffff" text-anchor="middle">2</text>
+  <text x="528" y="108" font-family="sans-serif" font-size="12" fill="#222">5V - MAX98357A Vin</text>
+  <circle cx="410" cy="134" r="9" fill="#ffffff" stroke="#a1a1aa" stroke-width="1.25"/>
+  <text x="410" y="138" font-family="sans-serif" font-size="9" fill="#71717a" text-anchor="middle">3</text>
+  <circle cx="490" cy="134" r="9" fill="#ffffff" stroke="#a1a1aa" stroke-width="1.25"/>
+  <text x="490" y="138" font-family="sans-serif" font-size="9" fill="#71717a" text-anchor="middle">4</text>
+  <circle cx="410" cy="164" r="9" fill="#ffffff" stroke="#a1a1aa" stroke-width="1.25"/>
+  <text x="410" y="168" font-family="sans-serif" font-size="9" fill="#71717a" text-anchor="middle">5</text>
+  <!-- 핀 6: GND -->
+  <circle cx="490" cy="164" r="9" fill="#6b7280" stroke="#374151" stroke-width="1.5"/>
+  <text x="490" y="168" font-family="sans-serif" font-size="10" fill="#ffffff" text-anchor="middle">6</text>
+  <text x="528" y="168" font-family="sans-serif" font-size="12" fill="#222">GND - INMP441 L/R (좌채널 고정)</text>
+  <circle cx="410" cy="194" r="9" fill="#ffffff" stroke="#a1a1aa" stroke-width="1.25"/>
+  <text x="410" y="198" font-family="sans-serif" font-size="9" fill="#71717a" text-anchor="middle">7</text>
+  <circle cx="490" cy="194" r="9" fill="#ffffff" stroke="#a1a1aa" stroke-width="1.25"/>
+  <text x="490" y="198" font-family="sans-serif" font-size="9" fill="#71717a" text-anchor="middle">8</text>
+  <!-- 핀 9: GND -->
+  <circle cx="410" cy="224" r="9" fill="#6b7280" stroke="#374151" stroke-width="1.5"/>
+  <text x="410" y="228" font-family="sans-serif" font-size="10" fill="#ffffff" text-anchor="middle">9</text>
+  <text x="372" y="228" font-family="sans-serif" font-size="12" fill="#222" text-anchor="end">GND - INMP441 GND</text>
+  <circle cx="490" cy="224" r="9" fill="#ffffff" stroke="#a1a1aa" stroke-width="1.25"/>
+  <text x="490" y="228" font-family="sans-serif" font-size="9" fill="#71717a" text-anchor="middle">10</text>
+  <circle cx="410" cy="254" r="9" fill="#ffffff" stroke="#a1a1aa" stroke-width="1.25"/>
+  <text x="410" y="258" font-family="sans-serif" font-size="9" fill="#71717a" text-anchor="middle">11</text>
+  <!-- 핀 12: BCLK -->
+  <circle cx="490" cy="254" r="9" fill="#7c3aed" stroke="#4c1d95" stroke-width="1.5"/>
+  <text x="490" y="258" font-family="sans-serif" font-size="10" fill="#ffffff" text-anchor="middle">12</text>
+  <text x="528" y="258" font-family="sans-serif" font-size="12" fill="#222">BCLK - INMP441 SCK + MAX98357A BCLK (Y분기)</text>
+  <circle cx="410" cy="284" r="9" fill="#ffffff" stroke="#a1a1aa" stroke-width="1.25"/>
+  <text x="410" y="288" font-family="sans-serif" font-size="9" fill="#71717a" text-anchor="middle">13</text>
+  <!-- 핀 14: GND -->
+  <circle cx="490" cy="284" r="9" fill="#6b7280" stroke="#374151" stroke-width="1.5"/>
+  <text x="490" y="288" font-family="sans-serif" font-size="10" fill="#ffffff" text-anchor="middle">14</text>
+  <text x="528" y="288" font-family="sans-serif" font-size="12" fill="#222">GND - MAX98357A GND</text>
+  <circle cx="410" cy="314" r="9" fill="#ffffff" stroke="#a1a1aa" stroke-width="1.25"/>
+  <text x="410" y="318" font-family="sans-serif" font-size="9" fill="#71717a" text-anchor="middle">15</text>
+  <circle cx="490" cy="314" r="9" fill="#ffffff" stroke="#a1a1aa" stroke-width="1.25"/>
+  <text x="490" y="318" font-family="sans-serif" font-size="9" fill="#71717a" text-anchor="middle">16</text>
+  <circle cx="410" cy="344" r="9" fill="#ffffff" stroke="#a1a1aa" stroke-width="1.25"/>
+  <text x="410" y="348" font-family="sans-serif" font-size="9" fill="#71717a" text-anchor="middle">17</text>
+  <circle cx="490" cy="344" r="9" fill="#ffffff" stroke="#a1a1aa" stroke-width="1.25"/>
+  <text x="490" y="348" font-family="sans-serif" font-size="9" fill="#71717a" text-anchor="middle">18</text>
+  <circle cx="410" cy="374" r="9" fill="#ffffff" stroke="#a1a1aa" stroke-width="1.25"/>
+  <text x="410" y="378" font-family="sans-serif" font-size="9" fill="#71717a" text-anchor="middle">19</text>
+  <circle cx="490" cy="374" r="9" fill="#ffffff" stroke="#a1a1aa" stroke-width="1.25"/>
+  <text x="490" y="378" font-family="sans-serif" font-size="9" fill="#71717a" text-anchor="middle">20</text>
+  <circle cx="410" cy="404" r="9" fill="#ffffff" stroke="#a1a1aa" stroke-width="1.25"/>
+  <text x="410" y="408" font-family="sans-serif" font-size="9" fill="#71717a" text-anchor="middle">21</text>
+  <circle cx="490" cy="404" r="9" fill="#ffffff" stroke="#a1a1aa" stroke-width="1.25"/>
+  <text x="490" y="408" font-family="sans-serif" font-size="9" fill="#71717a" text-anchor="middle">22</text>
+  <circle cx="410" cy="434" r="9" fill="#ffffff" stroke="#a1a1aa" stroke-width="1.25"/>
+  <text x="410" y="438" font-family="sans-serif" font-size="9" fill="#71717a" text-anchor="middle">23</text>
+  <circle cx="490" cy="434" r="9" fill="#ffffff" stroke="#a1a1aa" stroke-width="1.25"/>
+  <text x="490" y="438" font-family="sans-serif" font-size="9" fill="#71717a" text-anchor="middle">24</text>
+  <circle cx="410" cy="464" r="9" fill="#ffffff" stroke="#a1a1aa" stroke-width="1.25"/>
+  <text x="410" y="468" font-family="sans-serif" font-size="9" fill="#71717a" text-anchor="middle">25</text>
+  <circle cx="490" cy="464" r="9" fill="#ffffff" stroke="#a1a1aa" stroke-width="1.25"/>
+  <text x="490" y="468" font-family="sans-serif" font-size="9" fill="#71717a" text-anchor="middle">26</text>
+  <circle cx="410" cy="494" r="9" fill="#ffffff" stroke="#a1a1aa" stroke-width="1.25"/>
+  <text x="410" y="498" font-family="sans-serif" font-size="9" fill="#71717a" text-anchor="middle">27</text>
+  <circle cx="490" cy="494" r="9" fill="#ffffff" stroke="#a1a1aa" stroke-width="1.25"/>
+  <text x="490" y="498" font-family="sans-serif" font-size="9" fill="#71717a" text-anchor="middle">28</text>
+  <circle cx="410" cy="524" r="9" fill="#ffffff" stroke="#a1a1aa" stroke-width="1.25"/>
+  <text x="410" y="528" font-family="sans-serif" font-size="9" fill="#71717a" text-anchor="middle">29</text>
+  <circle cx="490" cy="524" r="9" fill="#ffffff" stroke="#a1a1aa" stroke-width="1.25"/>
+  <text x="490" y="528" font-family="sans-serif" font-size="9" fill="#71717a" text-anchor="middle">30</text>
+  <circle cx="410" cy="554" r="9" fill="#ffffff" stroke="#a1a1aa" stroke-width="1.25"/>
+  <text x="410" y="558" font-family="sans-serif" font-size="9" fill="#71717a" text-anchor="middle">31</text>
+  <circle cx="490" cy="554" r="9" fill="#ffffff" stroke="#a1a1aa" stroke-width="1.25"/>
+  <text x="490" y="558" font-family="sans-serif" font-size="9" fill="#71717a" text-anchor="middle">32</text>
+  <circle cx="410" cy="584" r="9" fill="#ffffff" stroke="#a1a1aa" stroke-width="1.25"/>
+  <text x="410" y="588" font-family="sans-serif" font-size="9" fill="#71717a" text-anchor="middle">33</text>
+  <circle cx="490" cy="584" r="9" fill="#ffffff" stroke="#a1a1aa" stroke-width="1.25"/>
+  <text x="490" y="588" font-family="sans-serif" font-size="9" fill="#71717a" text-anchor="middle">34</text>
+  <!-- 핀 35: LRCLK -->
+  <circle cx="410" cy="614" r="9" fill="#7c3aed" stroke="#4c1d95" stroke-width="1.5"/>
+  <text x="410" y="618" font-family="sans-serif" font-size="10" fill="#ffffff" text-anchor="middle">35</text>
+  <text x="372" y="618" font-family="sans-serif" font-size="12" fill="#222" text-anchor="end">LRCLK - INMP441 WS + MAX98357A LRC (Y분기)</text>
+  <circle cx="490" cy="614" r="9" fill="#ffffff" stroke="#a1a1aa" stroke-width="1.25"/>
+  <text x="490" y="618" font-family="sans-serif" font-size="9" fill="#71717a" text-anchor="middle">36</text>
+  <circle cx="410" cy="644" r="9" fill="#ffffff" stroke="#a1a1aa" stroke-width="1.25"/>
+  <text x="410" y="648" font-family="sans-serif" font-size="9" fill="#71717a" text-anchor="middle">37</text>
+  <!-- 핀 38: I2S DIN -->
+  <circle cx="490" cy="644" r="9" fill="#2563eb" stroke="#1e40af" stroke-width="1.5"/>
+  <text x="490" y="648" font-family="sans-serif" font-size="10" fill="#ffffff" text-anchor="middle">38</text>
+  <text x="528" y="648" font-family="sans-serif" font-size="12" fill="#222">I2S DIN - INMP441 SD (마이크→Pi)</text>
+  <circle cx="410" cy="674" r="9" fill="#ffffff" stroke="#a1a1aa" stroke-width="1.25"/>
+  <text x="410" y="678" font-family="sans-serif" font-size="9" fill="#71717a" text-anchor="middle">39</text>
+  <!-- 핀 40: I2S DOUT -->
+  <circle cx="490" cy="674" r="9" fill="#c2410c" stroke="#7c2d12" stroke-width="1.5"/>
+  <text x="490" y="678" font-family="sans-serif" font-size="10" fill="#ffffff" text-anchor="middle">40</text>
+  <text x="528" y="678" font-family="sans-serif" font-size="12" fill="#222">I2S DOUT - MAX98357A DIN (Pi→앰프)</text>
+  <text x="24" y="740" font-family="sans-serif" font-size="15" font-weight="700" fill="#222">범례</text>
+  <circle cx="34" cy="758" r="7" fill="#2563eb" stroke="#1e40af" stroke-width="1.25"/>
+  <text x="52" y="762" font-family="sans-serif" font-size="12" fill="#222">INMP441 마이크 신호</text>
+  <circle cx="34" cy="780" r="7" fill="#c2410c" stroke="#7c2d12" stroke-width="1.25"/>
+  <text x="52" y="784" font-family="sans-serif" font-size="12" fill="#222">MAX98357A 앰프 신호</text>
+  <circle cx="34" cy="802" r="7" fill="#7c3aed" stroke="#4c1d95" stroke-width="1.25"/>
+  <text x="52" y="806" font-family="sans-serif" font-size="12" fill="#222">공유 클럭 (BCLK / LRCLK) - 두 모듈에 Y 분기</text>
+  <circle cx="34" cy="824" r="7" fill="#6b7280" stroke="#374151" stroke-width="1.25"/>
+  <text x="52" y="828" font-family="sans-serif" font-size="12" fill="#222">GND (접지)</text>
+  <circle cx="34" cy="846" r="7" fill="#ffffff" stroke="#a1a1aa" stroke-width="1.25"/>
+  <text x="52" y="850" font-family="sans-serif" font-size="12" fill="#222">미사용 핀</text>
+  <text x="24" y="876" font-family="sans-serif" font-size="12" font-weight="700" fill="#dc2626">⚠ 핀 1 (3.3V) 을 5V 에 연결하지 마세요 - INMP441 이 즉시 파손됩니다</text>
+</svg>
